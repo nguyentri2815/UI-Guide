@@ -214,6 +214,13 @@ main .bd-example-position-utils .position-absolute {
   border-radius: .25rem;
 }
 
+main .bd-example-row .row > .col, main .bd-example-row .row > [class^="col-"] {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(39, 41, 43, 0.03);
+  border: 1px solid rgba(39, 41, 43, 0.1);
+}
+
 main .badge {
   display: inline-block;
   padding: .35em .65em;

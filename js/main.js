@@ -3,6 +3,57 @@ document.addEventListener("DOMContentLoaded",function(){
     //dom menu sidebar left
     document.querySelector('.sidebar-left').innerHTML=`
     <ul class="list-unstyled mb-0 py-3 pt-md-1">
+
+        <li class="mb-1">
+            <button class="btn rounded collapsed" title="content">
+                <div class="arrow pe-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+                    </svg>
+                </div>
+                Content
+            </button>
+            <div class="collapse">
+                <ul class="list-unstyled fw-normal pb-1 small">
+                    <li><a href="tables.html">Table</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="mb-1">
+            <button class="btn rounded collapsed " title="form">
+                <div class="arrow pe-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+                    </svg>
+                </div>
+                Forms
+            </button>
+            <div class="collapse">
+                <ul class="list-unstyled fw-normal pb-1 small">
+                    <li><a href="formcontrol.html">Formcontrol</a></li>
+                    <li><a href="inputgroup.html">Inputgroup</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="mb-1">
+            <button class="btn rounded collapsed" title="layout">
+                <div class="arrow pe-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+                    </svg>
+                </div>
+                Layout
+            </button>
+            <div class="collapse">
+                <ul class="list-unstyled fw-normal pb-1 small">
+                    <li><a href="grid.html">Grid</a></li>
+                </ul>
+            </div>
+        </li>
+
         <li class="mb-1">
             <button class="btn rounded collapsed" title="utilities">
                 <div class="arrow pe-1">
@@ -28,55 +79,6 @@ document.addEventListener("DOMContentLoaded",function(){
             </div>
         </li>
         
-        <li class="mb-1">
-            <button class="btn rounded collapsed " title="form">
-                <div class="arrow pe-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
-                    </svg>
-                </div>
-                Forms
-            </button>
-            <div class="collapse">
-                <ul class="list-unstyled fw-normal pb-1 small">
-                    <li><a href="formcontrol.html">Formcontrol</a></li>
-                    <li><a href="inputgroup.html">Inputgroup</a></li>
-                </ul>
-            </div>
-        </li>
-
-        <li class="mb-1">
-            <button class="btn rounded collapsed" title="content">
-                <div class="arrow pe-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
-                    </svg>
-                </div>
-                Content
-            </button>
-            <div class="collapse">
-                <ul class="list-unstyled fw-normal pb-1 small">
-                    <li><a href="tables.html">Table</a></li>
-                </ul>
-            </div>
-        </li>
-
-        <li class="mb-1">
-            <button class="btn rounded collapsed">
-                <div class="arrow pe-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
-                    </svg>
-                </div>
-                Layout
-            </button>
-            <div class="collapse">
-                <ul class="list-unstyled fw-normal pb-1 small">
-                    <li><a href="">Introduction</a></li>
-                </ul>
-            </div>
-        </li>
-
 
         <li class="mb-1">
             <button class="btn rounded collapsed">

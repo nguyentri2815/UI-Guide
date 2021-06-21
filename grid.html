@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="navbar shadow">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="navbar-brand">ui guide</h1>
+                </div>
+                <div class="col-6">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="" class="p-2">Docs</a>
+                        </li>
+                        <li>
+                            <a href="https://nguyentri2815.github.io/UI-Guide/css/styles.css" target="_blank" class="p-2">Copy style.css</a>
+                        </li>
+                        <li>
+                            <a href="" class="p-2">Examples</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="container-xxl pt-5 position-relative">
+
+        <div class="row mt-4">
+            <div class="col-2">
+                <span class="opacity">.</span>
+                <aside class="sidebar-left">
+                    <ul class="list-unstyled mb-0 py-3 pt-md-1">
+                        <li class="mb-1">
+                            <button class="btn rounded collapsed">
+                                <div class="arrow pe-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                                Utilities
+                            </button>
+                            <div class="collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="backgound.html">Background</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn rounded collapsed">
+                                <div class="arrow pe-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                                Layout
+                            </button>
+                            <div class="collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="">Introduction</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn rounded collapsed">
+                                <div class="arrow pe-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                                Forms
+                            </button>
+                            <div class="collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="">Introduction</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-8">
+                <div class="main pt-4">
+                    <div class="intro">
+                        <h1>Grid system</h1>
+                        <p class="lead">chia hệ thống lưới dựa vào kỹ thuật <code>float</code></p>
+                    </div>
+                    <div class="content">
+                        <h2 id="gridexambles" class="mt-2">Examples</h2>
+                        <p>lựa chọn class phù hợp  <code>.col-*</code>  <code>*</code> giá trị từ 1-12</p>
+                        <div class="bd-example bd-example-row">
+                            <div class="row mb-3">
+                            <div class="col-3">col-3</div>
+                            <div class="col-3">col-3</div>
+                            <div class="col-3">col-3</div>
+                            <div class="col-3">col-3</div>
+                            </div>
+                            <div class="row">
+                            <div class="col-8">col-8</div>
+                            <div class="col-4">col-4</div>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <pre class="chroma">
+                                <code class="language-html" data-lang="html">
+                           
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-3"</span><span class="p">&gt;</span>col-3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-3"</span><span class="p">&gt;</span>col-3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-3"</span><span class="p">&gt;</span>col-3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-3"</span><span class="p">&gt;</span>col-3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-8"</span><span class="p">&gt;</span>col-8<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>col-4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                                </code>
+                            </pre>
+                        </div>
+                        <p>lựa chọn class <code>.col</code> tùy chỉnh phần tử float left với width :auto</p>
+                        <div class="bd-example bd-example-row">
+                            <div class="row ">
+                            <div class="col">Column</div>
+                            <div class="col">Column</div>
+                            <div class="col">Column</div>
+                            <div class="col">Column</div>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <pre class="chroma">
+                                <code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>Column<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>Column<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>Column<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>Column<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                                </code>
+                            </pre>
+                        </div>
+                        <p>nếu width của phần tử con chiếm đủ 100% bố phần tử thừa sẽ tự động rớt xuống</p>
+                        <div class="bd-example bd-example-row">
+                            <div class="row row-cols-4">
+                            <div class="col-4">col-4</div>
+                            <div class="col-4">col-4</div>
+                            <div class="col-4">col-4</div>
+                            <div class="col-4">col-4</div>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <pre class="chroma">
+                                <code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row "</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>col-4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>col-4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>col-4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>col-4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <span class="opacity">.</span>
+                <aside class="sidebar-right">
+                    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                    <ul class="TableOfContents">
+                        <li><a href="#gridexambles">Exambles</a>
+                        </li>
+                       
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
