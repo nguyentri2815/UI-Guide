@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>utilities</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="navbar shadow">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="navbar-brand">ui guide</h1>
+                </div>
+                <div class="col-6">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="" class="p-2">Docs</a>
+                        </li>
+                        <li>
+                            <a href="" class="p-2">Examples</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="container-xxl pt-5 position-relative">
+
+        <div class="row mt-4">
+            <div class="col-2">
+                <span class="opacity">.</span>
+                <aside class="sidebar-left">
+                    <ul class="list-unstyled mb-0 py-3 pt-md-1">
+                        <li class="mb-1">
+                            <button class="btn rounded collapsed">
+                                <div class="arrow pe-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                                Utilities
+                            </button>
+                            <div class="collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="backgound.html">Background</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn rounded collapsed">
+                                <div class="arrow pe-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                                Layout
+                            </button>
+                            <div class="collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="">Introduction</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn rounded collapsed">
+                                <div class="arrow pe-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                                Forms
+                            </button>
+                            <div class="collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="">Introduction</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-8">
+                <div class="main pt-4">
+                    <div class="intro">
+                        <h1>Spacing</h1>
+                        <p class="lead">cung cấp các tiện ích về  <code>margin padding</code> tùy chỉnh khoảng cách nhanh chòng</p>
+                    </div>
+                    <div class="content">
+                        <h2 id="shadowexambles" class="mt-2">Margin and padding</h2>
+                        <p>class được xậy dựng từ 1-5 đơn vị rem tương ứng giá trị  <code>.25rem đến 3rem.</code></p>
+                        <h2 id="marginpaddingnotation" class="mt-2">Notation</h2>
+                        <p class="py-2">class được xậy dựng từ 1-5 đơn vị rem tương ứng giá trị  <code>.25rem đến 3rem.</code></p>
+                        <p class="py-2">cấu trúc class  <code>[property][sides]-[size]</code></p>
+                        <p class="py-2">property:</p>
+                        <ul style="list-style: disc;" class="mb-2 ps-4">
+                            <li><code>m</code> - cho thiết lập: <code>margin</code></li>
+                            <li><code>p</code> - cho thiết lập <code>padding</code></li>
+                        </ul>
+                        <p class="py-2">sides: là một trong</p>
+                        <ul style="list-style: disc;" class="mb-2 ps-4">
+                            <li><code>t</code> - thiết lập class cho  <code>margin-top</code> hoặc <code>padding-top</code></li>
+                            <li><code>b</code> - thiết lập class cho  <code>margin-bottom</code> hoặc <code>padding-bottom</code></li>
+                            <li><code>s</code> - (start) thiết lập class cho <code>margin-left</code> hoặc <code>padding-left</code> in LTR, <code>margin-right</code> or <code>padding-right</code> in RTL</li>
+                            <li><code>e</code> - (end) thiết lập class cho <code>margin-right</code> hoặc<code>padding-right</code> in LTR, <code>margin-left</code> or <code>padding-left</code> in RTL</li>
+                            <li><code>x</code> - thiết lập class cho cả <code>*-left</code> và <code>*-right</code></li>
+                            <li><code>y</code> - thiết lập class cho cả <code>*-top</code> vả <code>*-bottom</code></li>
+                            <li>trống - thiết lập class cho a <code>margin</code> hoặc <code>padding</code> cho cả 4 vị trí </li>
+                         </ul>
+                         <p class="py-2">size: là một trong</p>
+                         <ul style="list-style: disc;" class="mb-2 ps-4">
+                            <li><code>0</code> - for classes that eliminate the <code>margin</code> or <code>padding</code> by setting it to <code>0</code></li>
+                            <li><code>1</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * .25</code></li>
+                            <li><code>2</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * .5</code></li>
+                            <li><code>3</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer</code></li>
+                            <li><code>4</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * 1.5</code></li>
+                            <li><code>5</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * 3</code></li>
+                            <li><code>auto</code> - for classes that set the <code>margin</code> to auto</li>
+                        </ul>
+                        <h2 id="marginpaddingexanples" class="mt-2">Examples</h2>
+                        <div class="highlight">
+                            <pre class="chroma">
+                                <code class="language-scss" data-lang="scss">
+    <span class="nc">.mt-0</span> <span class="p">{</span>
+    <span class="nt">margin-top</span><span class="nd">:</span> <span class="nt">0</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="nc">.ms-1</span> <span class="p">{</span>
+    <span class="nt">margin-left</span><span class="nd">:</span> <span class="o">(</span><span class="err">$</span><span class="nt">spacer</span> <span class="o">*</span> <span class="nc">.25</span><span class="o">)</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="nc">.px-2</span> <span class="p">{</span>
+    <span class="nt">padding-left</span><span class="nd">:</span> <span class="o">(</span><span class="err">$</span><span class="nt">spacer</span> <span class="o">*</span> <span class="nc">.5</span><span class="o">)</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+    <span class="nt">padding-right</span><span class="nd">:</span> <span class="o">(</span><span class="err">$</span><span class="nt">spacer</span> <span class="o">*</span> <span class="nc">.5</span><span class="o">)</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="nc">.p-3</span> <span class="p">{</span>
+    <span class="nt">padding</span><span class="nd">:</span> <span class="err">$</span><span class="nt">spacer</span> <span class="o">!</span><span class="nt">important</span><span class="p">;</span>
+    <span class="p">}</span>
+                                </code>
+                            </pre>
+                        </div>
+                        <h2 id="marginpaddingcenter" class="mt-2">Horizontal centering</h2>
+                        <p class="py-2">Đặt class <code>.mx-auto </code> để căn chỉnh phần tử display: block  nằm giữa </p>
+                        <div class="bd-example">
+                            <div class="mx-auto" style="width: 200px; background-color: rgba(86,61,124,.15);">
+                              Centered element
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <pre class="chroma">
+                                <code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"mx-auto"</span> <span class="na">style</span><span class="o">=</span><span class="s">"width: 200px;"</span><span class="p">&gt;</span>
+        Centered element
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <span class="opacity">.</span>
+                <aside class="sidebar-right">
+                    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                    <ul class="TableOfContents">
+                        <li><a href="#marginpaddingnotation">Notation</a>
+                        </li>
+                        <li><a href="#marginpaddingexanples">Examples</a>
+                        </li>
+                        <li><a href="#marginpaddingcente">Horizontal centering</a>
+                        </li>
+                       
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

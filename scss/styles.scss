@@ -1,0 +1,147 @@
+@import "./base/index";
+@import "./helpers/index";
+@import "./components/form";
+
+// Loop over each utility property
+@each $key, $utility in $utilities {
+    @include generate-utility($utility,"");
+}
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+@if $enable-grid-classes {
+    // Single container class with breakpoint max-widths
+    .container,
+    // 100% wide container at all breakpoints
+    .container-fluid {
+      @include make-container();
+    }
+    
+    // Responsive containers that are 100% wide until a breakpoint
+    @each $breakpoint, $container-max-width in $container-max-widths {
+      .container-#{$breakpoint} {
+        @extend .container-fluid;
+      }
+  
+      @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+        %responsive-container-#{$breakpoint} {
+          max-width: $container-max-width;
+        }
+  
+        // Extend each breakpoint which is smaller or equal to the current breakpoint
+        $extend-breakpoint: true;
+  
+        @each $name, $width in $grid-breakpoints {
+          @if ($extend-breakpoint) {
+            .container#{breakpoint-infix($name, $grid-breakpoints)} {
+              @extend %responsive-container-#{$breakpoint};
+            }
+  
+            // Once the current breakpoint is reached, stop extending
+            @if ($breakpoint == $name) {
+              $extend-breakpoint: false;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+  // Row
+  //
+  // Rows contain your columns.
+  
+  @if $enable-grid-classes {
+    .row {
+      @include make-row();
+    }
+  
+    // Remove the negative margin from default .row, then the horizontal padding
+    // from all immediate children columns (to prevent runaway style inheritance).
+    // .no-gutters {
+    //   margin-right: 0;
+    //   margin-left: 0;
+  
+    //   > .col,
+    //   > [class*="col-"] {
+    //     padding-right: 0;
+    //     padding-left: 0;
+    //   }
+    // }
+  }
+  
+  // Columns
+  //
+  // Common styles for small and large grid columns
+  
+  //đã comment code ko cho chạy 
+  @if $enable-grid-classes {
+    @include make-grid-columns();
+  }
+  
+  .row {
+    overflow: hidden;
+  }
+  
+  .col-1 {
+    width: 8.33333%;
+    float: left;
+  }
+  
+  .col-2 {
+    width: 16.66667%;
+    float: left;
+  }
+  
+  .col-3 {
+    width: 25%;
+    float: left;
+  }
+  
+  .col-4 {
+    width: 33.33333%;
+    float: left;
+  }
+  
+  .col-5 {
+    width: 41.66667%;
+    float: left;
+  }
+  
+  .col-6 {
+    width: 50%;
+    float: left;
+  }
+  
+  .col-7 {
+    width: 58.33333%;
+    float: left;
+  }
+  
+  .col-8 {
+    width: 66.66667%;
+    float: left;
+  }
+  
+  .col-9 {
+    width: 75%;
+    float: left;
+  }
+  
+  .col-10 {
+    width: 83.33333%;
+    float: left;
+  }
+  
+  .col-11 {
+    width: 91.66667%;
+    float: left;
+  }
+  
+  .col-12 {
+    width: 100%;
+    float: left;
+  }

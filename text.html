@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>utilities</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="navbar shadow">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="navbar-brand">ui guide</h1>
+                </div>
+                <div class="col-6">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="" class="p-2">Docs</a>
+                        </li>
+                        <li>
+                            <a href="" class="p-2">Examples</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="container-xxl pt-5 position-relative">
+
+        <div class="row mt-4">
+            <div class="col-2">
+                <span class="opacity">.</span>
+                <aside class="sidebar-left">
+                    <ul class="list-unstyled mb-0 py-3 pt-md-1">
+                        <li class="mb-1">
+                            <button class="btn rounded collapsed">
+                                <div class="arrow pe-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                                Utilities
+                            </button>
+                            <div class="collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="backgound.html">Background</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn rounded collapsed">
+                                <div class="arrow pe-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                                Layout
+                            </button>
+                            <div class="collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="">Introduction</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn rounded collapsed">
+                                <div class="arrow pe-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                                Forms
+                            </button>
+                            <div class="collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="">Introduction</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-8">
+                <div class="main pt-4">
+                    <div class="intro">
+                        <h1>Text</h1>
+                        <p class="lead"> lựa chọn định dạng cho văn bản  <code>color</code> <code>alignment</code> <code>wrapping</code> <code>transform</code> <code>Font size</code> <code>Font weight and italics</code>....</p>
+                    </div>
+                    <div class="content">
+                        <h2 id="textcolor">color</h2>
+                        <p>Lựa chọn tên class phù hợp với màu cần chọn cho text <code>.text-*</code></p>
+                        <div class="bd-example">
+                            <p class="text-primary">.text-primary</p>
+                            <p class="text-secondary">.text-secondary</p>
+                            <p class="text-success">.text-success</p>
+                            <p class="text-danger">.text-danger</p>
+                            <p class="text-warning bg-dark">.text-warning</p>
+                            <p class="text-info bg-dark">.text-info</p>
+                            <p class="text-light bg-dark">.text-light</p>
+                            <p class="text-dark">.text-dark</p>
+                            <p class="text-body">.text-body</p>
+                            <p class="text-muted">.text-muted</p>
+                            <p class="text-white bg-dark">.text-white</p>
+                            <p class="text-black-50">.text-black-50</p>
+                            <p class="text-white-50 bg-dark">.text-white-50</p>
+                            </div>
+                        <div class="highlight">
+                            <pre class="chroma">
+                                <code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-primary"</span><span class="p">&gt;</span>.text-primary<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-secondary"</span><span class="p">&gt;</span>.text-secondary<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-success"</span><span class="p">&gt;</span>.text-success<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-danger"</span><span class="p">&gt;</span>.text-danger<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-warning bg-dark"</span><span class="p">&gt;</span>.text-warning<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-info bg-dark"</span><span class="p">&gt;</span>.text-info<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-light bg-dark"</span><span class="p">&gt;</span>.text-light<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-dark"</span><span class="p">&gt;</span>.text-dark<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-body"</span><span class="p">&gt;</span>.text-body<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-muted"</span><span class="p">&gt;</span>.text-muted<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-white bg-dark"</span><span class="p">&gt;</span>.text-white<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-black-50"</span><span class="p">&gt;</span>.text-black-50<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-white-50 bg-dark"</span><span class="p">&gt;</span>.text-white-50<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                                </code>
+                            </pre>
+                        </div>
+                        <h2 id="textalignment">Text alignment</h2>
+                        <p>căn chỉnh vị trí text trải, phải ,giữa</p>
+                        <div class="bd-example">
+                            <p class="text-start">Start aligned text on all viewport sizes.</p>
+                            <p class="text-center">Center aligned text on all viewport sizes.</p>
+                            <p class="text-end">End aligned text on all viewport sizes.</p>
+                            <p class="text-justify">justify aligned text on all viewport sizes.</p>
+                            <p class="text-nowrap">nowrap aligned text on all viewport sizes.</p>
+                        </div>
+                        <div class="highlight">
+                            <pre class="chroma">
+                                <code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-start"</span><span class="p">&gt;</span>Start aligned text on all viewport sizes.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-center"</span><span class="p">&gt;</span>Center aligned text on all viewport sizes.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-end"</span><span class="p">&gt;</span>End aligned text on all viewport sizes.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-justify"</span><span class="p">&gt;</span>justify aligned text on all viewport sizes.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-nowrap"</span><span class="p">&gt;</span>nowrap aligned text on all viewport sizes.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                                </code>
+                            </pre>
+                        </div>
+                        <h2 id="texttransform">Text transform</h2>
+                        <div class="bd-example">
+                            <p class="text-lowercase">Lowercased text.</p>
+                            <p class="text-uppercase">Uppercased text.</p>
+                            <p class="text-capitalize">CapiTaliZed text.</p>
+                        </div>
+                        <div class="highlight">
+                            <pre class="chroma">
+                                <code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-lowercase"</span><span class="p">&gt;</span>Lowercased text.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-uppercase"</span><span class="p">&gt;</span>Uppercased text.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-capitalize"</span><span class="p">&gt;</span>CapiTaliZed text.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                                </code>
+                            </pre>
+                        </div>
+                        <h2 id="textsize">Font size</h2>
+                        <div class="bd-example">
+                            <p class="fs-1">.fs-1 text</p>
+                            <p class="fs-2">.fs-2 text</p>
+                            <p class="fs-3">.fs-3 text</p>
+                            <p class="fs-4">.fs-4 text</p>
+                            <p class="fs-5">.fs-5 text</p>
+                            <p class="fs-6">.fs-6 text</p>
+                        </div>
+                        <div class="highlight">
+                            <pre class="chroma">
+                                <code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"fs-1"</span><span class="p">&gt;</span>.fs-1 text<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"fs-2"</span><span class="p">&gt;</span>.fs-2 text<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"fs-3"</span><span class="p">&gt;</span>.fs-3 text<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"fs-4"</span><span class="p">&gt;</span>.fs-4 text<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"fs-5"</span><span class="p">&gt;</span>.fs-5 text<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"fs-6"</span><span class="p">&gt;</span>.fs-6 text<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                                </code>
+                            </pre>
+                        </div>
+                        <h2 id="textweightitalic">Font weight and italics</h2>
+                        <p>lựa chọn class font wight với bộ clasa <code>.fw-*</code> font style với bộ class <code>.fst-*</code></p>
+                        <div class="bd-example">
+                            <p class="fw-bold">Bold text.</p>
+                            <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+                            <p class="fw-normal">Normal weight text.</p>
+                            <p class="fw-light">Light weight text.</p>
+                            <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+                            <p class="fst-italic">Italic text.</p>
+                            <p class="fst-normal">Text with normal font style</p>
+                        </div>
+                        <div class="highlight">
+                            <pre class="chroma">
+                                <code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"fw-bold"</span><span class="p">&gt;</span>Bold text.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"fw-bolder"</span><span class="p">&gt;</span>Bolder weight text (relative to the parent element).<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"fw-normal"</span><span class="p">&gt;</span>Normal weight text.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"fw-light"</span><span class="p">&gt;</span>Light weight text.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"fw-lighter"</span><span class="p">&gt;</span>Lighter weight text (relative to the parent element).<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"fst-italic"</span><span class="p">&gt;</span>Italic text.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"fst-normal"</span><span class="p">&gt;</span>Text with normal font style<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                                </code>
+                            </pre>
+                        </div>
+                        <h2 id="textlineheight">Line height</h2>
+                        <p>thêm class line height với bộ class <code>.lh-*</code></p>
+                        <div class="bd-example">
+                            <p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                            <p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                            <p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                            <p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+                        </div>
+                        <div class="highlight">
+                            <pre class="chroma">
+                                <code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"lh-1"</span><span class="p">&gt;</span>This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"lh-sm"</span><span class="p">&gt;</span>This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"lh-base"</span><span class="p">&gt;</span>This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"lh-lg"</span><span class="p">&gt;</span>This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                                </code>
+                            </pre>
+                        </div>
+                        <h2 id="textdecorration">Text decoration</h2>
+                        <div class="bd-example">
+                            <p class="text-decoration-underline">This text has a line underneath it.</p>
+                            <p class="text-decoration-line-through">This text has a line going through it.</p>
+                            <a href="#" class="text-decoration-none">This link has its text decoration removed</a>
+                        </div>
+                        <div class="highlight">
+                            <pre class="chroma">
+                                <code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-decoration-underline"</span><span class="p">&gt;</span>This text has a line underneath it.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-decoration-line-through"</span><span class="p">&gt;</span>This text has a line going through it.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-decoration-none"</span><span class="p">&gt;</span>This link has its text decoration removed<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <span class="opacity">.</span>
+                <aside class="sidebar-right">
+                    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                    <ul class="TableOfContents">
+                        <li><a href="#textcolor">color</a></li>
+                        <li><a href="#textalignment">Text alignment</a></li>
+                        <li><a href="#texttransform">Text transform</a></li>
+                        <li><a href="#textsize">Font size</a></li>
+                        <li><a href="#textweightitalic">Font weight and italics</a></li>
+                        <li><a href="#textlineheight">Line height</a></li>
+                        <li><a href="#textdecorration">Text decoration</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

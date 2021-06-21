@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>utilities</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="navbar shadow">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="navbar-brand">ui guide</h1>
+                </div>
+                <div class="col-6">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="" class="p-2">Docs</a>
+                        </li>
+                        <li>
+                            <a href="" class="p-2">Examples</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="container-xxl pt-5 position-relative">
+
+        <div class="row mt-4">
+            <div class="col-2">
+                <span class="opacity">.</span>
+                <aside class="sidebar-left">
+                    <ul class="list-unstyled mb-0 py-3 pt-md-1">
+                        <li class="mb-1">
+                            <button class="btn rounded collapsed">
+                                <div class="arrow pe-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                                Utilities
+                            </button>
+                            <div class="collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="backgound.html">Background</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn rounded collapsed">
+                                <div class="arrow pe-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                                Layout
+                            </button>
+                            <div class="collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="">Introduction</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn rounded collapsed">
+                                <div class="arrow pe-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                                Forms
+                            </button>
+                            <div class="collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="">Introduction</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-8">
+                <div class="main pt-4">
+                    <div class="intro">
+                        <h1>Background</h1>
+                        <p class="lead">lựa chọn  <code>background-color</code> phù hợp cho dự án</p>
+                    </div>
+                    <div class="content">
+                        <h2 id="backgroundColor">Background color</h2>
+                        <p>Chọn class như bên dưới chọn màu nền như mong muốn <strong>không set màu bằng  <code>color</code></strong>, so in
+                            some cases you’ll want to use <code>.text-*</code> <a
+                                href="/docs/5.0/utilities/colors/">color utilities</a>.</p>
+                        <div class="bd-example">
+                            <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                            <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                            <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                            <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+                            <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+                            <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+                            <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+                            <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+                            <div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
+                            <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+                            <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+                        </div>
+                        <h2 id="copyClassBGColor">Copy class</h2>
+                        <div class="highlight">
+<pre class="chroma">
+<code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-3 mb-2 bg-primary text-white"</span><span class="p">&gt;</span>.bg-primary<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-3 mb-2 bg-secondary text-white"</span><span class="p">&gt;</span>.bg-secondary<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-3 mb-2 bg-success text-white"</span><span class="p">&gt;</span>.bg-success<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-3 mb-2 bg-danger text-white"</span><span class="p">&gt;</span>.bg-danger<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-3 mb-2 bg-warning text-dark"</span><span class="p">&gt;</span>.bg-warning<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-3 mb-2 bg-info text-dark"</span><span class="p">&gt;</span>.bg-info<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-3 mb-2 bg-light text-dark"</span><span class="p">&gt;</span>.bg-light<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-3 mb-2 bg-dark text-white"</span><span class="p">&gt;</span>.bg-dark<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-3 mb-2 bg-body text-dark"</span><span class="p">&gt;</span>.bg-body<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-3 mb-2 bg-white text-dark"</span><span class="p">&gt;</span>.bg-white<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-3 mb-2 bg-transparent text-dark"</span><span class="p">&gt;</span>.bg-transparent<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code>
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <span class="opacity">.</span>
+                <aside class="sidebar-right">
+                    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                    <ul class="TableOfContents">
+                        <li><a href="#backgroundColor">Background color</a>
+                            <ul>
+                                <li><a href="#additive">Additive</a></li>
+                                <li><a href="#subtractive">Subtractive</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#copyClassBGColor">copy class </a></li>
+                        <li><a href="#border-width">Border-width</a></li>
+                        <li><a href="#border-radius">Border-radius</a>
+                            <ul>
+                                <li><a href="#sizes">Sizes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#sass">Sass</a>
+                            <ul>
+                                <li><a href="#variables">Variables</a></li>
+                                <li><a href="#mixins">Mixins</a></li>
+                                <li><a href="#utilities-api">Utilities API</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
