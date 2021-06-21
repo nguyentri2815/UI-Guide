@@ -42,6 +42,38 @@ table {
   border: 0.5px solid #000;
 }
 
+.table.table-xs th {
+  padding: .15rem;
+}
+
+.table.table-xs td {
+  padding: .15rem;
+}
+
+.table.table-sm th {
+  padding: .2rem;
+}
+
+.table.table-sm td {
+  padding: .2rem;
+}
+
+.table.table-md th {
+  padding: .4rem;
+}
+
+.table.table-md td {
+  padding: .4rem;
+}
+
+.table.table-lg th {
+  padding: .6rem;
+}
+
+.table.table-lg td {
+  padding: .6rem;
+}
+
 .table caption {
   padding-top: .75rem;
   padding-bottom: .75rem;

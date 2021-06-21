@@ -25,6 +25,38 @@ table {
         border: 0.5px solid #000;
 
     }
+    &.table-xs{
+        th{
+            padding: .15rem;
+        }
+        td{
+            padding: .15rem;
+        }
+    }
+    &.table-sm{
+        th{
+            padding: .2rem;
+        }
+        td{
+            padding: .2rem;
+        }
+    }
+    &.table-md{
+        th{
+            padding: .4rem;
+        }
+        td{
+            padding: .4rem;
+        }
+    }
+    &.table-lg{
+        th{
+            padding: .6rem;
+        }
+        td{
+            padding: .6rem;
+        }
+    }
     caption {
         padding-top: .75rem;
         padding-bottom: .75rem;

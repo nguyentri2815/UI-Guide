@@ -104,7 +104,7 @@
                         <p class="lead">hiển thị văn bản kiểu bảng<code>table</code> /p>
                     </div>
                     <div class="content">
-                        <h2 id="shadowexambles" class="mt-2">Overview</h2>
+                        <h2 id="tableoverview" class="mt-2">Overview</h2>
                         <p>Thêm lớp cơ sở <codde>.table</codde> vào bất kỳ <code>&lt;table&gt;</code> nào, sau đó mở rộng bằng các lớp bổ trợ tùy chọn hoặc kiểu tùy chỉnh có bên dưới </p>
                         <p>bảng .table mặc định</p>
                         <div class="bd-example">
@@ -174,10 +174,144 @@
                                 </code>
                             </pre>
                         </div>
-                        <h2 id="shadowexambles" class="mt-2">Variants</h2>
+                        <h2 id="tablevariants" class="mt-2">Variants</h2>
                         <p><code>chưa thấy cần tới sẽ bỏ sung nếu gặp trong template</code></p>
-                        <h2 id="shadowexambles" class="mt-2">Table borders</h2>
-                        <h3 class="my-3">Bordered tables</h3>
+                        <h2 id="tablesizing" class="mt-2">Sizing</h2>
+                        <p>table size <code>.table-xs</code></p>
+                        <div class="bd-example">
+                            <table class="table table-bordered table-xs">
+                                <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          
+                            </table>
+                          </div>
+                        <p>table size <code>.table-sm</code></p>
+                        <div class="bd-example">
+                            <table class="table table-bordered table-sm">
+                                <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          
+                            </table>
+                          </div>
+                        <p>table size <code>.table-md</code></p>
+                        <div class="bd-example">
+                            <table class="table table-bordered table-md">
+                                <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          
+                            </table>
+                          </div>
+                        <p>table size <code>.table-lg</code></p>
+                        <div class="bd-example">
+                            <table class="table table-bordered table-lg">
+                                <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          
+                            </table>
+                          </div>
+                          
+                        <h2 id="tableborders" class="mt-2">Table borders</h2>
+                        <h3 class="my-3" id="tableBordered">Bordered tables</h3>
                         <p>Thêm <code>.table-bordered</code> cho các đường viền trên tất cả các mặt của bảng và các ô.</p>
                         <div class="bd-example">
                             <table class="table table-bordered">
@@ -229,7 +363,7 @@
                                 </code>
                             </pre>
                         </div>
-                        <h3 class="my-3">Tables without borders</h3>
+                        <h3 class="my-3" id="tablewithoutborders">Tables without borders</h3>
                         <p>add class <code>.table-borderless</code> cho bảng không có viền</p>
                         <div class="bd-example">
                             <table class="table table-borderless">
@@ -272,8 +406,8 @@
                                 </code>
                             </pre>
                         </div>
-                        <h2 id="shadowexambles" class="mt-2">Anatomy</h2>
-                        <h3 class="my-3">Table head</h3>
+                        <h2 id="tableanatomy" class="mt-2">Anatomy</h2>
+                        <h3 class="my-3" id="tablehead">Table head</h3>
                         <p>Tương tự như bảng và bảng tối, sử dụng các lớp bổ trợ .table-light hoặc .table-dark để làm cho các <code><thead> </code> có màu xám nhạt hoặc đậm.</p>
                             <div class="bd-example">
                                 <table class="table">
@@ -367,7 +501,7 @@
                                             </code>
                                         </pre>
                                     </div>
-                                <h3 class="my-3">Table foot</h3>
+                                <h3 class="my-3" id="tablefoot">Table foot</h3>
                                 <div class="bd-example">
                                     <table class="table">
                                       <thead class="table-light">
@@ -425,7 +559,7 @@
                                       </code>
                                     </pre>
                                 </div>
-                            <h3 class="my-3">Captions</h3>
+                            <h3 class="my-3" id="tablecaptions">Captions</h3>
                             <p>Một <caption> có chức năng giống như một tiêu đề cho một bảng. Nó giúp người dùng có trình đọc màn hình tìm thấy bảng và hiểu nội dung của bảng và quyết định xem họ có muốn đọc bảng đó hay không.</p>
                                 <div class="bd-example">
                                     <table class="table">
@@ -541,7 +675,34 @@
                 <aside class="sidebar-right">
                     <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
                     <ul class="TableOfContents">
-                        <li><a href="#shadowexambles">Exambles</a>
+                        <li><a href="#tableoverview">Overview</a>
+                        </li>
+                        <li><a href="#tablevariants">Variants</a>
+                        </li>
+                        <li><a href="#tablesizing">Sizing</a>
+                        </li>
+                        <li><a href="#tableborders">Table borders</a>
+                            <ul>
+                                <li>
+                                    <a href="#tableBordered">Bordered tables</a>
+                                </li>
+                                <li>
+                                    <a href="#tablewithoutborders">Tables without borders</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#tableanatomy">Anatomy</a>
+                            <ul>
+                                <li>
+                                    <a href="#tablehead">Table head</a>
+                                </li>
+                                <li>
+                                    <a href="#tablefoot">Table foot</a>
+                                </li>
+                                <li>
+                                    <a href="#tablecaptions">Captions</a>
+                                </li>
+                            </ul>
                         </li>
                        
                     </ul>
