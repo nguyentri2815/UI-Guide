@@ -136,7 +136,7 @@ $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 // scss-docs-end box-shadow-variables
 
 // scss-docs-start border-variables
-$border-width:                1px !default;
+$border-width:                0.5px !default;
 $border-widths: (
   1: 1px,
   2: 2px,
@@ -145,7 +145,7 @@ $border-widths: (
   5: 5px
 ) !default;
 
-$border-color:                $gray-300 !default;
+$border-color:                $black!default;
 // scss-docs-end border-variables
 
 // Spacing
