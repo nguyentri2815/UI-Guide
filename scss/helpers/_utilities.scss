@@ -344,7 +344,7 @@ $utilities: map-merge(
     "margin-end": (
       responsive: true,
       property: margin-right,
-      class: me,
+      class: mr,
       values: map-merge($spacers, (auto: auto))
     ),
     "margin-bottom": (
@@ -356,7 +356,7 @@ $utilities: map-merge(
     "margin-start": (
       responsive: true,
       property: margin-left,
-      class: ms,
+      class: ml,
       values: map-merge($spacers, (auto: auto))
     ),
     // Negative margin utilities
