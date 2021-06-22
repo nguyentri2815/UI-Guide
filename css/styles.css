@@ -60,13 +60,13 @@ table {
 .table th {
   padding: .3rem;
   vertical-align: top;
-  border-top: 0.5px solid #000;
+  border: 0.5px solid #000;
 }
 
 .table td {
   padding: .3rem;
   vertical-align: top;
-  border-top: 0.5px solid #000;
+  border: 0.5px solid #000;
 }
 
 .table.table-bordered {
@@ -117,10 +117,6 @@ table {
   caption-side: top;
 }
 
-.table-bordered td, .table-bordered th {
-  border: 0.5px solid #000;
-}
-
 .table-borderless tbody + tbody, .table-borderless td, .table-borderless th, .table-borderless thead th {
   border: 0;
 }
@@ -140,6 +136,11 @@ table {
 .form-control {
   border-bottom: 1px dashed;
   display: inline-block;
+}
+
+.form-control-dotted {
+  display: inline-block;
+  border-bottom: 1px dotted black;
 }
 
 .align-baseline {
@@ -166,11 +167,11 @@ table {
   vertical-align: text-top !important;
 }
 
-.float-start {
+.float-left {
   float: left !important;
 }
 
-.float-end {
+.float-right {
   float: right !important;
 }
 
@@ -342,11 +343,11 @@ table {
   border-top: 0 !important;
 }
 
-.border-end {
+.border-right {
   border-right: 0.5px solid #000 !important;
 }
 
-.border-end-0 {
+.border-right-0 {
   border-right: 0 !important;
 }
 
@@ -358,11 +359,11 @@ table {
   border-bottom: 0 !important;
 }
 
-.border-start {
+.border-right {
   border-left: 0.5px solid #000 !important;
 }
 
-.border-start-0 {
+.border-right-0 {
   border-left: 0 !important;
 }
 
@@ -964,11 +965,11 @@ table {
   line-height: 2 !important;
 }
 
-.text-start {
+.text-left {
   text-align: left !important;
 }
 
-.text-end {
+.text-right {
   text-align: right !important;
 }
 

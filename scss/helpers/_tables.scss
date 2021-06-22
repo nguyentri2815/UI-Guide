@@ -14,12 +14,12 @@ table {
     th{
         padding: .3rem;
         vertical-align: top;
-        border-top: 0.5px solid #000;
+        border: 0.5px solid #000;
     }
     td{
         padding: .3rem;
         vertical-align: top;
-        border-top: 0.5px solid #000;
+        border: 0.5px solid #000;
     }
     &.table-bordered {
         border: 0.5px solid #000;
@@ -71,9 +71,9 @@ table {
     }
 
 }
-.table-bordered td, .table-bordered th {
-    border: 0.5px solid #000;
-}
+// .table-bordered td, .table-bordered th {
+//     border: 0.5px solid #000;
+// }
 .table-borderless tbody+tbody, .table-borderless td, .table-borderless th, .table-borderless thead th {
     border: 0;
 }

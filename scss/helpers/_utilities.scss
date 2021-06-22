@@ -18,8 +18,8 @@ $utilities: map-merge(
       responsive: true,
       property: float,
       values: (
-        start: left,
-        end: right,
+        left: left,
+        right: right,
         none: none,
       )
     ),
@@ -99,9 +99,9 @@ $utilities: map-merge(
         0: 0,
       )
     ),
-    "border-end": (
+    "border-right": (
       property: border-right,
-      class: border-end,
+      class: border-right,
       values: (
         null: $border-width solid $border-color,
         0: 0,
@@ -114,9 +114,9 @@ $utilities: map-merge(
         0: 0,
       )
     ),
-    "border-start": (
+    "border-left": (
       property: border-left,
-      class: border-start,
+      class: border-right,
       values: (
         null: $border-width solid $border-color,
         0: 0,
@@ -341,7 +341,7 @@ $utilities: map-merge(
       class: mt,
       values: map-merge($spacers, (auto: auto))
     ),
-    "margin-end": (
+    "margin-right": (
       responsive: true,
       property: margin-right,
       class: mr,
@@ -353,7 +353,7 @@ $utilities: map-merge(
       class: mb,
       values: map-merge($spacers, (auto: auto))
     ),
-    "margin-start": (
+    "margin-left": (
       responsive: true,
       property: margin-left,
       class: ml,
@@ -427,7 +427,7 @@ $utilities: map-merge(
       class: pt,
       values: $spacers
     ),
-    "padding-end": (
+    "padding-right": (
       responsive: true,
       property: padding-right,
       class: pr,
@@ -439,7 +439,7 @@ $utilities: map-merge(
       class: pb,
       values: $spacers
     ),
-    "padding-start": (
+    "padding-left": (
       responsive: true,
       property: padding-left,
       class: pl,
@@ -490,8 +490,8 @@ $utilities: map-merge(
       property: text-align,
       class: text,
       values: (
-        start: left,
-        end: right,
+        left: left,
+        right: right,
         center: center,
         justify:justify,
 

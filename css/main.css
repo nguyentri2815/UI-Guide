@@ -278,6 +278,11 @@ main .sidebar-right strong {
   line-height: 1.2;
 }
 
+main .sidebar-right .TableOfContents {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
 main .sidebar-right .TableOfContents li {
   margin-bottom: .25rem;
   padding: 0.2rem 0;
@@ -299,5 +304,37 @@ main .sidebar-right .TableOfContents li ul {
 main .sidebar-right.absolute-top {
   position: fixed;
   top: 66px;
+}
+
+.table p {
+  margin-bottom: 0;
+}
+
+.w-1 {
+  width: 1%;
+}
+
+.w-2 {
+  width: 2%;
+}
+
+.w-3 {
+  width: 3%;
+}
+
+.w-5 {
+  width: 5%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-20 {
+  width: 20%;
 }
 /*# sourceMappingURL=main.css.map */
