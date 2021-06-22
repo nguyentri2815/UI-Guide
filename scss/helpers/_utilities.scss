@@ -430,7 +430,7 @@ $utilities: map-merge(
     "padding-end": (
       responsive: true,
       property: padding-right,
-      class: pe,
+      class: pr,
       values: $spacers
     ),
     "padding-bottom": (
@@ -442,7 +442,7 @@ $utilities: map-merge(
     "padding-start": (
       responsive: true,
       property: padding-left,
-      class: ps,
+      class: pl,
       values: $spacers
     ),
     // scss-docs-end utils-spacing

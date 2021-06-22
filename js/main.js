@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded",function(){
     //dom menu sidebar left
     document.querySelector('.sidebar-left').innerHTML=`
     <ul class="list-unstyled mb-0 py-3 pt-md-1">
-
         <li class="mb-1">
             <button class="btn rounded collapsed" title="content">
                 <div class="arrow pe-1">
@@ -99,6 +98,10 @@ document.addEventListener("DOMContentLoaded",function(){
         
     </ul>
     `
+    //dom change list header nav right
+    let elementliFirt=document.querySelector(".navbar-nav li:first-child").innerHTML=`<a href="updateseveryday.html" class="p-2"> Follow updates every day </a>`;
+
+
     //active .btn.collapsed theo title
     // handle click .btn.collapsed
     let titledocument = document.title;
