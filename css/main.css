@@ -156,6 +156,7 @@ header .search-bar .search-list {
   background: white;
   opacity: 0;
   visibility: visible;
+  display: none;
 }
 
 header .search-bar .search-list:first-child a {

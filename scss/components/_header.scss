@@ -68,6 +68,7 @@ header{
             background: white;
             opacity: 0;
             visibility: visible;
+            display: none;
             &:first-child{
                 & a{
                     color: rgba(121, 82, 179, 0.1);
