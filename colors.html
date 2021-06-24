@@ -12,31 +12,44 @@
 
 <body>
     <!-- header -->
-    <header class="navbar shadow">
-        <div class="container-xxl">
-            <div class="row">
-                <div class="col-6">
-                    <h1 class="navbar-brand">ui guide</h1>
-                </div>
-                <div class="col-6">
-                    <ul class="navbar-nav">
-                        <li>
-                            <a href="" class="p-2">Docs</a>
-                        </li>
-                        <li>
-                            <a href="https://nguyentri2815.github.io/UI-Guide/css/styles.css" target="_blank" class="p-2">Copy style.css</a>
-                        </li>
-                        <li>
-                            <a href="" class="p-2">Examples</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <header>
+        <div class="navbar shadow ">
+          <div class="container-xxl">
+              <div class="row">
+                  <div class="col-6">
+                      <h1 class="navbar-brand">ui guide</h1>
+                  </div>
+                  <div class="col-6">
+                      <ul class="navbar-nav">
+                          <li>
+                              <a href="" class="p-2">Docs</a>
+                          </li>
+                          <li>
+                              <a href="https://nguyentri2815.github.io/UI-Guide/css/styles.css" target="_blank" class="p-2">Copy style.css</a>
+                          </li>
+                          <li>
+                              <a href="" class="p-2">Examples</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
         </div>
-    </header>
-
+          <div class="search-bar py-2">
+            <div class="container-xxl">
+              <div class="position-relative">
+                <input type="text" placeholder="Search docs...">
+                <ul class="search-list">
+                  <li class="my-1"><a href="#" class=""> Documentation</a></li>
+                  <li class="my-1"><a href="" class="text-primary"> be bla</a></li>
+                  <li class="my-1"><a href="" class="text-primary"> be bla</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </header>
     <!-- main -->
-    <main class="container-xxl pt-5 position-relative">
+    <main class="container-xxl position-relative">
 
         <div class="row mt-4">
             <div class="col-2">
@@ -100,13 +113,12 @@
             <div class="col-8">
                 <div class="main pt-4">
                     <div class="intro">
-                        <h1>Background</h1>
-                        <p class="lead">lựa chọn  <code>background-color</code> phù hợp cho dự án</p>
+                        <h1>Colors</h1>
+                        <p class="lead">Lựa chọn  <code>color</code> cho text hoặc <code>Background </code> phù hợp cho dự án</p>
                     </div>
                     <div class="content">
                         <h2 id="backgroundColor">Background color</h2>
-                        <p>Chọn class như bên dưới chọn màu nền như mong muốn <a
-                                href="/docs/5.0/utilities/colors/">color utilities</a>.</p>
+                        <p>Chọn class bên dưới để chọn màu nền mong muốn </p>
                         <div class="bd-example">
                             <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
                             <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
@@ -120,7 +132,6 @@
                             <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
                             <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
                         </div>
-                        <h2 id="copyClassBGColor">Copy class</h2>
                         <div class="highlight">
 <pre class="chroma">
 <code class="language-html" data-lang="html">
@@ -138,6 +149,43 @@
 </code>
 </pre>
                         </div>
+
+                        <h2 id="textcolor">Text color</h2>
+                        <p>Lựa chọn tên class phù hợp với màu cần chọn cho text <code>.text-*</code></p>
+                        <div class="bd-example">
+                            <p class="text-primary">.text-primary</p>
+                            <p class="text-secondary">.text-secondary</p>
+                            <p class="text-success">.text-success</p>
+                            <p class="text-danger">.text-danger</p>
+                            <p class="text-warning bg-dark">.text-warning</p>
+                            <p class="text-info bg-dark">.text-info</p>
+                            <p class="text-light bg-dark">.text-light</p>
+                            <p class="text-dark">.text-dark</p>
+                            <p class="text-body">.text-body</p>
+                            <p class="text-muted">.text-muted</p>
+                            <p class="text-white bg-dark">.text-white</p>
+                            <p class="text-black-50">.text-black-50</p>
+                            <p class="text-white-50 bg-dark">.text-white-50</p>
+                            </div>
+                        <div class="highlight">
+                            <pre class="chroma">
+                                <code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-primary"</span><span class="p">&gt;</span>.text-primary<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-secondary"</span><span class="p">&gt;</span>.text-secondary<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-success"</span><span class="p">&gt;</span>.text-success<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-danger"</span><span class="p">&gt;</span>.text-danger<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-warning bg-dark"</span><span class="p">&gt;</span>.text-warning<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-info bg-dark"</span><span class="p">&gt;</span>.text-info<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-light bg-dark"</span><span class="p">&gt;</span>.text-light<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-dark"</span><span class="p">&gt;</span>.text-dark<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-body"</span><span class="p">&gt;</span>.text-body<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-muted"</span><span class="p">&gt;</span>.text-muted<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-white bg-dark"</span><span class="p">&gt;</span>.text-white<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-black-50"</span><span class="p">&gt;</span>.text-black-50<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-white-50 bg-dark"</span><span class="p">&gt;</span>.text-white-50<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                                </code>
+                            </pre>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -148,7 +196,7 @@
                     <ul class="TableOfContents">
                         <li><a href="#backgroundColor">Background color</a>
                         </li>
-                        <li><a href="#copyClassBGColor">copy class </a></li>
+                        <li><a href="#textcolor">text color </a></li>
                     </ul>
                 </aside>
             </div>

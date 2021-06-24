@@ -12,31 +12,45 @@
 
 <body>
     <!-- header -->
-    <header class="navbar shadow">
-        <div class="container-xxl">
-            <div class="row">
-                <div class="col-6">
-                    <h1 class="navbar-brand">ui guide</h1>
-                </div>
-                <div class="col-6">
-                    <ul class="navbar-nav">
-                        <li>
-                            <a href="" class="p-2">Docs</a>
-                        </li>
-                        <li>
-                            <a href="https://nguyentri2815.github.io/UI-Guide/css/styles.css" target="_blank" class="p-2">Copy style.css</a>
-                        </li>
-                        <li>
-                            <a href="" class="p-2">Examples</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <header>
+        <div class="navbar shadow ">
+          <div class="container-xxl">
+              <div class="row">
+                  <div class="col-6">
+                      <h1 class="navbar-brand">ui guide</h1>
+                  </div>
+                  <div class="col-6">
+                      <ul class="navbar-nav">
+                          <li>
+                              <a href="" class="p-2">Docs</a>
+                          </li>
+                          <li>
+                              <a href="https://nguyentri2815.github.io/UI-Guide/css/styles.css" target="_blank" class="p-2">Copy style.css</a>
+                          </li>
+                          <li>
+                              <a href="" class="p-2">Examples</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
         </div>
-    </header>
+          <div class="search-bar py-2">
+            <div class="container-xxl">
+              <div class="position-relative">
+                <input type="text" placeholder="Search docs...">
+                <ul class="search-list">
+                  <li class="my-1"><a href="#" class=""> Documentation</a></li>
+                  <li class="my-1"><a href="" class="text-primary"> be bla</a></li>
+                  <li class="my-1"><a href="" class="text-primary"> be bla</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </header>
 
     <!-- main -->
-    <main class="container-xxl pt-5 position-relative">
+    <main class="container-xxl position-relative">
 
         <div class="row mt-4">
             <div class="col-2">
@@ -101,20 +115,20 @@
                 <div class="main pt-4">
                     <div class="intro">
                         <h1>Spacing</h1>
-                        <p class="lead">cung cấp các tiện ích về  <code>margin padding</code> tùy chỉnh khoảng cách nhanh chòng</p>
+                        <p class="lead">Cung cấp các tiện ích về  <code>margin padding</code> tùy chỉnh khoảng cách nhanh chòng</p>
                     </div>
                     <div class="content">
                         <h2 id="shadowexambles" class="mt-2">Margin and padding</h2>
-                        <p>class được xậy dựng từ 1-5 đơn vị rem tương ứng giá trị  <code>.25rem đến 3rem.</code></p>
+                        <p>Class được xậy dựng từ 1-5 đơn vị rem tương ứng giá trị  <code>.25rem đến 3rem.</code></p>
                         <h2 id="marginpaddingnotation" class="mt-2">Notation</h2>
-                        <p class="py-2">class được xậy dựng từ 1-5 đơn vị rem tương ứng giá trị  <code>.25rem đến 3rem.</code></p>
-                        <p class="py-2">cấu trúc class  <code>[property][sides]-[size]</code></p>
-                        <p class="py-2">property:</p>
+                        <p class="py-2">Class được xậy dựng từ 1-5 đơn vị rem tương ứng giá trị  <code>.25rem đến 3rem.</code></p>
+                        <p class="py-2">Cấu trúc class  <code>[property][sides]-[size]</code></p>
+                        <p class="py-2">Property:</p>
                         <ul style="list-style: disc;" class="mb-2 pl-4">
                             <li><code>m</code> - cho thiết lập: <code>margin</code></li>
                             <li><code>p</code> - cho thiết lập <code>padding</code></li>
                         </ul>
-                        <p class="py-2">sides: là một trong</p>
+                        <p class="py-2">Sides: là một trong</p>
                         <ul style="list-style: disc;" class="mb-2 pl-4">
                             <li><code>t</code> - thiết lập class cho  <code>margin-top</code> hoặc <code>padding-top</code></li>
                             <li><code>b</code> - thiết lập class cho  <code>margin-bottom</code> hoặc <code>padding-bottom</code></li>
@@ -124,7 +138,7 @@
                             <li><code>y</code> - thiết lập class cho cả <code>*-top</code> vả <code>*-bottom</code></li>
                             <li>trống - thiết lập class cho a <code>margin</code> hoặc <code>padding</code> cho cả 4 vị trí </li>
                          </ul>
-                         <p class="py-2">size: là một trong</p>
+                         <p class="py-2">Size: là một trong</p>
                          <ul style="list-style: disc;" class="mb-2 pl-4">
                             <li><code>0</code> - for classes that eliminate the <code>margin</code> or <code>padding</code> by setting it to <code>0</code></li>
                             <li><code>1</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * .25</code></li>

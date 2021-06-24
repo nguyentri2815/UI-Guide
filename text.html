@@ -12,31 +12,45 @@
 
 <body>
     <!-- header -->
-    <header class="navbar shadow">
-        <div class="container-xxl">
-            <div class="row">
-                <div class="col-6">
-                    <h1 class="navbar-brand">ui guide</h1>
-                </div>
-                <div class="col-6">
-                    <ul class="navbar-nav">
-                        <li>
-                            <a href="" class="p-2">Docs</a>
-                        </li>
-                        <li>
-                            <a href="https://nguyentri2815.github.io/UI-Guide/css/styles.css" target="_blank" class="p-2">Copy style.css</a>
-                        </li>
-                        <li>
-                            <a href="" class="p-2">Examples</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <header>
+        <div class="navbar shadow ">
+          <div class="container-xxl">
+              <div class="row">
+                  <div class="col-6">
+                      <h1 class="navbar-brand">ui guide</h1>
+                  </div>
+                  <div class="col-6">
+                      <ul class="navbar-nav">
+                          <li>
+                              <a href="" class="p-2">Docs</a>
+                          </li>
+                          <li>
+                              <a href="https://nguyentri2815.github.io/UI-Guide/css/styles.css" target="_blank" class="p-2">Copy style.css</a>
+                          </li>
+                          <li>
+                              <a href="" class="p-2">Examples</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
         </div>
-    </header>
+          <div class="search-bar py-2">
+            <div class="container-xxl">
+              <div class="position-relative">
+                <input type="text" placeholder="Search docs...">
+                <ul class="search-list">
+                  <li class="my-1"><a href="#" class=""> Documentation</a></li>
+                  <li class="my-1"><a href="" class="text-primary"> be bla</a></li>
+                  <li class="my-1"><a href="" class="text-primary"> be bla</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </header>
 
     <!-- main -->
-    <main class="container-xxl pt-5 position-relative">
+    <main class="container-xxl position-relative">
 
         <div class="row mt-4">
             <div class="col-2">
@@ -101,47 +115,12 @@
                 <div class="main pt-4">
                     <div class="intro">
                         <h1>Text</h1>
-                        <p class="lead"> lựa chọn định dạng cho văn bản  <code>color</code> <code>alignment</code> <code>wrapping</code> <code>transform</code> <code>Font size</code> <code>Font weight and italics</code>....</p>
+                        <p class="lead"> Lựa chọn định dạng cho văn bản  <code>color</code> <code>alignment</code> <code>wrapping</code> <code>transform</code> <code>Font size</code> <code>Font weight and italics</code>....</p>
                     </div>
                     <div class="content">
-                        <h2 id="textcolor">color</h2>
-                        <p>Lựa chọn tên class phù hợp với màu cần chọn cho text <code>.text-*</code></p>
-                        <div class="bd-example">
-                            <p class="text-primary">.text-primary</p>
-                            <p class="text-secondary">.text-secondary</p>
-                            <p class="text-success">.text-success</p>
-                            <p class="text-danger">.text-danger</p>
-                            <p class="text-warning bg-dark">.text-warning</p>
-                            <p class="text-info bg-dark">.text-info</p>
-                            <p class="text-light bg-dark">.text-light</p>
-                            <p class="text-dark">.text-dark</p>
-                            <p class="text-body">.text-body</p>
-                            <p class="text-muted">.text-muted</p>
-                            <p class="text-white bg-dark">.text-white</p>
-                            <p class="text-black-50">.text-black-50</p>
-                            <p class="text-white-50 bg-dark">.text-white-50</p>
-                            </div>
-                        <div class="highlight">
-                            <pre class="chroma">
-                                <code class="language-html" data-lang="html">
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-primary"</span><span class="p">&gt;</span>.text-primary<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-secondary"</span><span class="p">&gt;</span>.text-secondary<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-success"</span><span class="p">&gt;</span>.text-success<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-danger"</span><span class="p">&gt;</span>.text-danger<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-warning bg-dark"</span><span class="p">&gt;</span>.text-warning<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-info bg-dark"</span><span class="p">&gt;</span>.text-info<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-light bg-dark"</span><span class="p">&gt;</span>.text-light<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-dark"</span><span class="p">&gt;</span>.text-dark<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-body"</span><span class="p">&gt;</span>.text-body<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-muted"</span><span class="p">&gt;</span>.text-muted<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-white bg-dark"</span><span class="p">&gt;</span>.text-white<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-black-50"</span><span class="p">&gt;</span>.text-black-50<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"text-white-50 bg-dark"</span><span class="p">&gt;</span>.text-white-50<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-                                </code>
-                            </pre>
-                        </div>
+                        
                         <h2 id="textalignment">Text alignment</h2>
-                        <p>căn chỉnh vị trí text trải, phải ,giữa</p>
+                        <p>Căn chỉnh vị trí text trải, phải ,giữa</p>
                         <div class="bd-example">
                             <p class="text-start">Start aligned text on all viewport sizes.</p>
                             <p class="text-center">Center aligned text on all viewport sizes.</p>
@@ -197,7 +176,7 @@
                             </pre>
                         </div>
                         <h2 id="textweightitalic">Font weight and italics</h2>
-                        <p>lựa chọn class font wight với bộ clasa <code>.fw-*</code> font style với bộ class <code>.fst-*</code></p>
+                        <p>Lựa chọn class font wight với bộ clasa <code>.fw-*</code> font style với bộ class <code>.fst-*</code></p>
                         <div class="bd-example">
                             <p class="fw-bold">Bold text.</p>
                             <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
@@ -221,7 +200,7 @@
                             </pre>
                         </div>
                         <h2 id="textlineheight">Line height</h2>
-                        <p>thêm class line height với bộ class <code>.lh-*</code></p>
+                        <p>Thêm class line height với bộ class <code>.lh-*</code></p>
                         <div class="bd-example">
                             <p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
                             <p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
@@ -261,7 +240,6 @@
                 <aside class="sidebar-right">
                     <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
                     <ul class="TableOfContents">
-                        <li><a href="#textcolor">color</a></li>
                         <li><a href="#textalignment">Text alignment</a></li>
                         <li><a href="#texttransform">Text transform</a></li>
                         <li><a href="#textsize">Font size</a></li>

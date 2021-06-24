@@ -73,6 +73,22 @@ table {
   border: 0.5px solid #000;
 }
 
+.table.table-dotted th {
+  border-style: dotted;
+}
+
+.table.table-dotted td {
+  border-style: dotted;
+}
+
+.table.table-dashed th {
+  border-style: dashed;
+}
+
+.table.table-dashed td {
+  border-style: dashed;
+}
+
 .table.table-xs th {
   padding: .15rem;
 }
@@ -105,18 +121,6 @@ table {
   padding: .6rem;
 }
 
-.table caption {
-  padding-top: .3rem;
-  padding-bottom: .3rem;
-  color: #6c757d;
-  text-align: left;
-  caption-side: bottom;
-}
-
-.table.caption-top caption {
-  caption-side: top;
-}
-
 .table-borderless tbody + tbody, .table-borderless td, .table-borderless th, .table-borderless thead th {
   border: 0;
 }
@@ -134,13 +138,18 @@ table {
 }
 
 .form-control {
-  border-bottom: 1px dashed;
+  border-bottom: 1px solid #000;
   display: inline-block;
 }
 
-.form-control-dotted {
-  display: inline-block;
-  border-bottom: 1px dotted black;
+.form-control.border-dotted {
+  border: none;
+  border-bottom: 1px dotted #000;
+}
+
+.form-control.border-dashed {
+  border: none;
+  border-bottom: 1px dashed #000;
 }
 
 .align-baseline {
@@ -427,6 +436,46 @@ table {
   border-width: 5px !important;
 }
 
+.w-2 {
+  width: 2% !important;
+}
+
+.w-4 {
+  width: 4% !important;
+}
+
+.w-6 {
+  width: 6% !important;
+}
+
+.w-8 {
+  width: 8% !important;
+}
+
+.w-10 {
+  width: 10% !important;
+}
+
+.w-12 {
+  width: 12% !important;
+}
+
+.w-14 {
+  width: 14% !important;
+}
+
+.w-16 {
+  width: 16% !important;
+}
+
+.w-18 {
+  width: 18% !important;
+}
+
+.w-20 {
+  width: 20% !important;
+}
+
 .w-25 {
   width: 25% !important;
 }
@@ -468,19 +517,19 @@ table {
 }
 
 .h-25 {
-  height: 25% !important;
+  height: 1rem !important;
 }
 
 .h-50 {
-  height: 50% !important;
+  height: 2rem !important;
 }
 
 .h-75 {
-  height: 75% !important;
+  height: 3rem !important;
 }
 
 .h-100 {
-  height: 100% !important;
+  height: 4rem !important;
 }
 
 .h-auto {

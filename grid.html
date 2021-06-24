@@ -12,31 +12,45 @@
 
 <body>
     <!-- header -->
-    <header class="navbar shadow">
-        <div class="container-xxl">
-            <div class="row">
-                <div class="col-6">
-                    <h1 class="navbar-brand">ui guide</h1>
-                </div>
-                <div class="col-6">
-                    <ul class="navbar-nav">
-                        <li>
-                            <a href="" class="p-2">Docs</a>
-                        </li>
-                        <li>
-                            <a href="https://nguyentri2815.github.io/UI-Guide/css/styles.css" target="_blank" class="p-2">Copy style.css</a>
-                        </li>
-                        <li>
-                            <a href="" class="p-2">Examples</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <header>
+        <div class="navbar shadow ">
+          <div class="container-xxl">
+              <div class="row">
+                  <div class="col-6">
+                      <h1 class="navbar-brand">ui guide</h1>
+                  </div>
+                  <div class="col-6">
+                      <ul class="navbar-nav">
+                          <li>
+                              <a href="" class="p-2">Docs</a>
+                          </li>
+                          <li>
+                              <a href="https://nguyentri2815.github.io/UI-Guide/css/styles.css" target="_blank" class="p-2">Copy style.css</a>
+                          </li>
+                          <li>
+                              <a href="" class="p-2">Examples</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
         </div>
-    </header>
+          <div class="search-bar py-2">
+            <div class="container-xxl">
+              <div class="position-relative">
+                <input type="text" placeholder="Search docs...">
+                <ul class="search-list">
+                  <li class="my-1"><a href="#" class=""> Documentation</a></li>
+                  <li class="my-1"><a href="" class="text-primary"> be bla</a></li>
+                  <li class="my-1"><a href="" class="text-primary"> be bla</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </header>
 
     <!-- main -->
-    <main class="container-xxl pt-5 position-relative">
+    <main class="container-xxl position-relative">
 
         <div class="row mt-4">
             <div class="col-2">
@@ -101,21 +115,23 @@
                 <div class="main pt-4">
                     <div class="intro">
                         <h1>Grid system</h1>
-                        <p class="lead">chia hệ thống lưới dựa vào kỹ thuật <code>float</code></p>
+                        <p class="lead">Chia hệ thống lưới dựa vào kỹ thuật <code>float</code></p>
                     </div>
                     <div class="content">
                         <h2 id="gridexambles" class="mt-2">Examples</h2>
-                        <p>lựa chọn class phù hợp  <code>.col-*</code>  <code>*</code> giá trị từ 1-12</p>
+                        <p>Lựa chọn class phù hợp  <code>.col-* </code> , <code>*</code> giá trị từ 1-12</p>
                         <div class="bd-example bd-example-row">
+                            <button type="button" class="btn-clipboard ml-0 " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                             <div class="row mb-3">
-                            <div class="col-3">col-3</div>
-                            <div class="col-3">col-3</div>
-                            <div class="col-3">col-3</div>
-                            <div class="col-3">col-3</div>
+                            <div class="col-3 px-2">col-3</div>
+                            <div class="col-3 px-2">col-3</div>
+                            <div class="col-3 px-2">col-3</div>
+                            <div class="col-3 px-2">col-3</div>
                             </div>
+                            <button type="button" class="btn-clipboard ml-0 " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                             <div class="row">
-                            <div class="col-8">col-8</div>
-                            <div class="col-4">col-4</div>
+                            <div class="col-8 px-2">col-8</div>
+                            <div class="col-4 px-2">col-4</div>
                             </div>
                         </div>
                         <div class="highlight">
@@ -123,56 +139,58 @@
                                 <code class="language-html" data-lang="html">
                            
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-3"</span><span class="p">&gt;</span>col-3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-3"</span><span class="p">&gt;</span>col-3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-3"</span><span class="p">&gt;</span>col-3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-3"</span><span class="p">&gt;</span>col-3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-3 px-2"</span><span class="p">&gt;</span>col-3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-3 px-2"</span><span class="p">&gt;</span>col-3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-3 px-2"</span><span class="p">&gt;</span>col-3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-3 px-2"</span><span class="p">&gt;</span>col-3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-8"</span><span class="p">&gt;</span>col-8<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>col-4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-8 px-2"</span><span class="p">&gt;</span>col-8<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4 px-2"</span><span class="p">&gt;</span>col-4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
                                 </code>
                             </pre>
                         </div>
-                        <p>lựa chọn class <code>.col</code> tùy chỉnh phần tử float left với width :auto</p>
+                        <p>Lựa chọn class <code>.col</code> tùy chỉnh phần tử float left với width :auto</p>
                         <div class="bd-example bd-example-row">
+                            <button type="button" class="btn-clipboard ml-0 " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                             <div class="row ">
-                            <div class="col">Column</div>
-                            <div class="col">Column</div>
-                            <div class="col">Column</div>
-                            <div class="col">Column</div>
+                            <div class="col px-2">Column</div>
+                            <div class="col px-2">Column</div>
+                            <div class="col px-2">Column</div>
+                            <div class="col px-2">Column</div>
                             </div>
                         </div>
                         <div class="highlight">
                             <pre class="chroma">
                                 <code class="language-html" data-lang="html">
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row"</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>Column<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>Column<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>Column<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col"</span><span class="p">&gt;</span>Column<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col px-2"</span><span class="p">&gt;</span>Column<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col px-2"</span><span class="p">&gt;</span>Column<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col px-2"</span><span class="p">&gt;</span>Column<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col px-2"</span><span class="p">&gt;</span>Column<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
                                 </code>
                             </pre>
                         </div>
-                        <p>nếu width của phần tử con chiếm đủ 100% bố phần tử thừa sẽ tự động rớt xuống</p>
+                        <p>Nếu width của phần tử con chiếm đủ 100% bố phần tử thừa sẽ tự động rớt xuống</p>
                         <div class="bd-example bd-example-row">
+                            <button type="button" class="btn-clipboard ml-0 " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                             <div class="row row-cols-4">
-                            <div class="col-4">col-4</div>
-                            <div class="col-4">col-4</div>
-                            <div class="col-4">col-4</div>
-                            <div class="col-4">col-4</div>
+                            <div class="col-4 px-2">col-4</div>
+                            <div class="col-4 px-2">col-4</div>
+                            <div class="col-4 px-2">col-4</div>
+                            <div class="col-4 px-2">col-4</div>
                             </div>
                         </div>
                         <div class="highlight">
                             <pre class="chroma">
                                 <code class="language-html" data-lang="html">
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"row "</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>col-4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>col-4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>col-4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4"</span><span class="p">&gt;</span>col-4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4 px-2"</span><span class="p">&gt;</span>col-4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4 px-2"</span><span class="p">&gt;</span>col-4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4 px-2"</span><span class="p">&gt;</span>col-4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"col-4 px-2"</span><span class="p">&gt;</span>col-4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
                                 </code>
                             </pre>

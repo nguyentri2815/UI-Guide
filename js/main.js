@@ -1,5 +1,7 @@
-document.addEventListener("DOMContentLoaded",function(){
 
+document.addEventListener("DOMContentLoaded",function(){
+      
+    
     //dom menu sidebar left
     document.querySelector('.sidebar-left').innerHTML=`
     <ul class="list-unstyled mb-0 py-3 pt-md-1">
@@ -65,7 +67,7 @@ document.addEventListener("DOMContentLoaded",function(){
             </button>
             <div class="collapse">
                 <ul class="list-unstyled fw-normal pb-1 small">
-                    <li><a href="backgound.html">Background</a></li>
+                    <li><a href="colors.html">Colors</a></li>
                     <li><a href="borders.html">Borders</a></li>
                     <li><a href="display.html">Display</a></li>
                     <li><a href="float.html">Float</a></li>
@@ -79,28 +81,10 @@ document.addEventListener("DOMContentLoaded",function(){
             </div>
         </li>
         
-
-        <li class="mb-1">
-            <button class="btn rounded collapsed">
-                <div class="arrow pe-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
-                    </svg>
-                </div>
-                Custum
-            </button>
-            <div class="collapse">
-                <ul class="list-unstyled fw-normal pb-1 small">
-                    <li><a href="">Introduction</a></li>
-                </ul>
-            </div>
-        </li>
-
-        
     </ul>
     `
     //dom change list header nav right
-    let elementliFirt=document.querySelector(".navbar-nav li:first-child").innerHTML=`<a href="updateseveryday.html" class="p-2"> Follow updates every day </a>`;
+    document.querySelector(".navbar-nav li:first-child").innerHTML=`<a href="updateseveryday.html" class="p-2"> Follow updates every day </a>`;
 
 
     //active .btn.collapsed theo title
@@ -132,16 +116,35 @@ document.addEventListener("DOMContentLoaded",function(){
     var heigth =document.querySelector('.navbar').clientHeight;
     let elementSidebarLeft=document.querySelector('.sidebar-left');
     let elementSidebarRifht=document.querySelector('.sidebar-right');
+    let elementSearch=document.querySelector('.search-bar');
     window.addEventListener('scroll',function(){
         if(window.pageYOffset >heigth ){
+            elementSearch.classList.add('fixed-top');
             elementSidebarLeft.classList.add('absolute-top');
             elementSidebarRifht.classList.add('absolute-top');
         }else{
+            elementSearch.classList.remove('fixed-top');
             elementSidebarLeft.classList.remove('absolute-top');
             elementSidebarRifht.classList.remove('absolute-top')
         }
     })
 
+  //copy html
+  var listElementcanCopy= document.querySelectorAll('.btn-clipboard');
+  for (let k = 0; k < listElementcanCopy.length; k++) {
+      listElementcanCopy[k].addEventListener('click',function(){
+        var myTemporaryInputElement = document.createElement("textarea");
+        myTemporaryInputElement.value = listElementcanCopy[k].nextElementSibling.outerHTML;
+    
+        document.body.appendChild(myTemporaryInputElement);
+    
+        myTemporaryInputElement.select();
+        document.execCommand("Copy");
+    
+        document.body.removeChild(myTemporaryInputElement);
+  })
+
+  }
 
 },false)  
  

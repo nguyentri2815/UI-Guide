@@ -1,8 +1,17 @@
 .form-control {
-    border-bottom: 1px dashed;
+    border-bottom: 1px solid #000;
     display: inline-block;
+    &.border-dotted{
+        border: none;
+        border-bottom: 1px dotted #000;
+        
+    }
+    &.border-dashed{
+        border: none;
+        border-bottom: 1px dashed #000;
+        
+    }
 }
-.form-control-dotted{
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
+// .border-dotted{
+//     border-style: dotted;
+// }

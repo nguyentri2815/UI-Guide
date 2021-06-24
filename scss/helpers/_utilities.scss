@@ -139,6 +139,16 @@ $utilities: map-merge(
       property: width,
       class: w,
       values: (
+        2 :2%,
+        4 :4%,
+        6 :6%,
+        8 :8%,
+        10 :10%,
+        12 :12%,
+        14 :14%,
+        16 :16%,
+        18 :18%,
+        20 :20%,
         25: 25%,
         50: 50%,
         75: 75%,
@@ -176,10 +186,10 @@ $utilities: map-merge(
       property: height,
       class: h,
       values: (
-        25: 25%,
-        50: 50%,
-        75: 75%,
-        100: 100%,
+        25: 1rem,
+        50: 2rem,
+        75: 3rem,
+        100: 4rem,
         auto: auto
       )
     ),

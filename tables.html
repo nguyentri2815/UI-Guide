@@ -12,7 +12,8 @@
 
 <body>
     <!-- header -->
-    <header class="navbar shadow">
+    <header>
+      <div class="navbar shadow ">
         <div class="container-xxl">
             <div class="row">
                 <div class="col-6">
@@ -33,10 +34,23 @@
                 </div>
             </div>
         </div>
+      </div>
+        <div class="search-bar py-2">
+          <div class="container-xxl">
+            <div class="position-relative">
+              <input type="text" placeholder="Search docs...">
+              <ul class="search-list">
+                <li class="my-1"><a href="#" class=""> Documentation</a></li>
+                <li class="my-1"><a href="" class="text-primary"> be bla</a></li>
+                <li class="my-1"><a href="" class="text-primary"> be bla</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
     </header>
 
     <!-- main -->
-    <main class="container-xxl pt-5 position-relative">
+    <main class="container-xxl position-relative">
 
         <div class="row mt-4">
             <div class="col-2">
@@ -101,13 +115,16 @@
                 <div class="main pt-4">
                     <div class="intro">
                         <h1>Tables</h1>
-                        <p class="lead">hiển thị văn bản kiểu bảng<code>table</code> </p>
+                        <p class="lead">Hiển thị văn bản kiểu bảng <code>table</code> </p>
+                        <p class="lead">Mặc định border của td và th là <code> solid </code></p>
                     </div>
                     <div class="content">
                         <h2 id="tableexamplestemplate" class="mt-2">Examples template</h2>
-                        <p><code> chưa có class cho border dased dotted </code></p>
+                        <p> Có thể thêm class <code> .table-dotted .table-dashed </code> để tùy biến border cho th và td</p>
                         <h3 class="my-3" id="tableexamplestemplate1">Examples 1</h3>
-                        <table class="fw-bold table ">
+
+                        <button type="button" class="btn-clipboard " title="" data-bs-original-title="Copy to clipboard">Copy</button>
+                        <table class="table">
                           <thead>
                             <tr>
                               <th colspan="4" class="bg-primary text-white text-left">thông tin khách hàng</th>
@@ -134,8 +151,10 @@
                             </tr>
                           </tbody>
                         </table>
-                        <h3 class="my-3" id="tableexamplestemplate2">Examples 2</h3>
-                          <table class="fw-bold table">
+
+                        <h3 class="my-3" id="tableexamplestemplate2">Examples 2 -table-dotted</h3>
+                          <button type="button" class="btn-clipboard " title="" data-bs-original-title="Copy to clipboard">Copy</button>
+                          <table class="table table-dotted fw-bold ">
                             <thead>
                               <tr>
                                 <th colspan="4" class="bg-primary text-white text-left" >đối tượng thăm giá bảo hiểm
@@ -176,8 +195,10 @@
               
                             </tbody>
                           </table>
-                          <h3 class="my-3" id="tableexamplestemplate3">Examples 3</h3>
-                          <table class="table">
+
+                          <h3 class="my-3" id="tableexamplestemplate3">Examples 3 -table-dashed</h3>
+                          <button type="button" class="btn-clipboard " title="" data-bs-original-title="Copy to clipboard">Copy</button>
+                          <table class="table table-dashed">
                             <thead>
                               <tr>
                                 <th class="bg-primary text-white text-left" colspan="3">
@@ -269,6 +290,7 @@
                             </tbody>
                           </table>
                           <h3 class="my-3" id="tableexamplestemplate4">Examples 4</h3>
+                          <button type="button" class="btn-clipboard " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                           <table class="table">
                             <thead>
                               <tr>
@@ -295,6 +317,7 @@
                           </table>
 
                           <h3 class="my-3" id="tableexamplestemplate5">Examples 5</h3>
+                          <button type="button" class="btn-clipboard " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                           <table class="table">
                             <thead class="text-uppercase text-center">
                                 <tr>
@@ -337,6 +360,7 @@
                         </table>
 
                         <h3 class="my-3" id="tableexamplestemplate6">Examples 6</h3>
+                        <button type="button" class="btn-clipboard " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                         <table class="table">
                           <tbody>
                             <tr>
@@ -426,6 +450,7 @@
                         </table>
 
                         <h3 class="my-3" id="tableexamplestemplate7">Examples 7</h3>
+                        <button type="button" class="btn-clipboard " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                         <table class="table ">
                           <tbody>
                             <tr class="text-center">
@@ -479,7 +504,9 @@
                         <h2 id="tableoverview" class="mt-2">Overview</h2>
                         <p>Thêm lớp cơ sở <codde>.table</codde> vào bất kỳ <code>&lt;table&gt;</code> nào, sau đó mở rộng bằng các lớp bổ trợ tùy chọn hoặc kiểu tùy chỉnh có bên dưới </p>
                         <p>bảng .table mặc định</p>
+
                         <div class="bd-example">
+                          <button type="button" class="btn-clipboard " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                             <table class="table">
                                 <thead>
                               <tr>
@@ -551,6 +578,7 @@
                         <h2 id="tablesizing" class="mt-2">Sizing</h2>
                         <p>table size <code>.table-xs</code></p>
                         <div class="bd-example">
+                          <button type="button" class="btn-clipboard " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                             <table class="table table-bordered table-xs">
                                 <thead>
                               <tr>
@@ -584,6 +612,7 @@
                           </div>
                         <p>table size <code>.table-sm</code></p>
                         <div class="bd-example">
+                          <button type="button" class="btn-clipboard " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                             <table class="table table-bordered table-sm">
                                 <thead>
                               <tr>
@@ -617,6 +646,7 @@
                           </div>
                         <p>table size <code>.table-md</code></p>
                         <div class="bd-example">
+                          <button type="button" class="btn-clipboard " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                             <table class="table table-bordered table-md">
                                 <thead>
                               <tr>
@@ -650,6 +680,7 @@
                           </div>
                         <p>table size <code>.table-lg</code></p>
                         <div class="bd-example">
+                          <button type="button" class="btn-clipboard " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                             <table class="table table-bordered table-lg">
                                 <thead>
                               <tr>
@@ -683,7 +714,7 @@
                           </div>
                           
                         <h2 id="tableborders" class="mt-2">Table borders</h2>
-                        <h3 class="my-3" id="tableBordered">Bordered tables</h3>
+                        <!-- <h3 class="my-3" id="tableBordered">Bordered tables</h3>
                         <p>Thêm <code>.table-bordered</code> cho các đường viền trên tất cả các mặt của bảng và các ô.</p>
                         <div class="bd-example">
                             <table class="table table-bordered">
@@ -734,10 +765,12 @@
 <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
                                 </code>
                             </pre>
-                        </div>
+                        </div> -->
                         <h3 class="my-3" id="tablewithoutborders">Tables without borders</h3>
                         <p>add class <code>.table-borderless</code> cho bảng không có viền</p>
-                        <div class="bd-example">
+                        <div class="bd-example"
+                        >
+                        <button type="button" class="btn-clipboard " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                             <table class="table table-borderless">
                                 <thead>
                               <tr>
@@ -773,6 +806,92 @@
                               <pre class="chroma">
                                   <code class="language-html" data-lang="html">
     <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table table-borderless"</span><span class="p">&gt;</span>
+        ...
+    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                                </code>
+                            </pre>
+                        </div>
+                        <p id="tablewithoutdotted">Add class <code>.table-dotted</code> cho bảng có viền kiểu dotted </p>
+                        <div class="bd-example">
+                          <button type="button" class="btn-clipboard " title="" data-bs-original-title="Copy to clipboard">Copy</button>
+                            <table class="table table-dotted">
+                                <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          
+                            </table>
+                          </div>
+                          <div class="highlight">
+                              <pre class="chroma">
+                                  <code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table table-dotted"</span><span class="p">&gt;</span>
+        ...
+    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+                                </code>
+                            </pre>
+                        </div>
+                        <p id="tablewithoutdashed">Add class <code>.table-dashed</code> cho bảng có viền kiểu dashed </p>
+                        <div class="bd-example">
+                          <button type="button" class="btn-clipboard " title="" data-bs-original-title="Copy to clipboard">Copy</button>
+                            <table class="table table-dashed">
+                                <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          
+                            </table>
+                          </div>
+                          <div class="highlight">
+                              <pre class="chroma">
+                                  <code class="language-html" data-lang="html">
+    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">"table table-dashed"</span><span class="p">&gt;</span>
         ...
     <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
                                 </code>
@@ -1084,10 +1203,13 @@
                         <li><a href="#tableborders">Table borders</a>
                             <ul>
                                 <li>
-                                    <a href="#tableBordered">Bordered tables</a>
+                                    <a href="#tablewithoutborders">Tables without borderless</a>
                                 </li>
                                 <li>
-                                    <a href="#tablewithoutborders">Tables without borders</a>
+                                    <a href="#tablewithoutdotted">Tables without dotted</a>
+                                </li>
+                                <li>
+                                    <a href="#tablewithoutdashed">Tables without dashed</a>
                                 </li>
                             </ul>
                         </li>
@@ -1112,7 +1234,6 @@
     </main>
     <!-- footer -->
     <footer>
-
     </footer>
     <script src="./js/main.js"></script>
 </body>

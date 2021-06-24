@@ -12,31 +12,45 @@
 
 <body>
     <!-- header -->
-    <header class="navbar shadow">
-        <div class="container-xxl">
-            <div class="row">
-                <div class="col-6">
-                    <h1 class="navbar-brand">ui guide</h1>
-                </div>
-                <div class="col-6">
-                    <ul class="navbar-nav">
-                        <li>
-                            <a href="" class="p-2">Docs</a>
-                        </li>
-                        <li>
-                            <a href="https://nguyentri2815.github.io/UI-Guide/css/styles.css" target="_blank" class="p-2">Copy style.css</a>
-                        </li>
-                        <li>
-                            <a href="" class="p-2">Examples</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <header>
+        <div class="navbar shadow ">
+          <div class="container-xxl">
+              <div class="row">
+                  <div class="col-6">
+                      <h1 class="navbar-brand">ui guide</h1>
+                  </div>
+                  <div class="col-6">
+                      <ul class="navbar-nav">
+                          <li>
+                              <a href="" class="p-2">Docs</a>
+                          </li>
+                          <li>
+                              <a href="https://nguyentri2815.github.io/UI-Guide/css/styles.css" target="_blank" class="p-2">Copy style.css</a>
+                          </li>
+                          <li>
+                              <a href="" class="p-2">Examples</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
         </div>
-    </header>
+          <div class="search-bar py-2">
+            <div class="container-xxl">
+              <div class="position-relative">
+                <input type="text" placeholder="Search docs...">
+                <ul class="search-list">
+                  <li class="my-1"><a href="#" class=""> Documentation</a></li>
+                  <li class="my-1"><a href="" class="text-primary"> be bla</a></li>
+                  <li class="my-1"><a href="" class="text-primary"> be bla</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </header>
 
     <!-- main -->
-    <main class="container-xxl pt-5 position-relative">
+    <main class="container-xxl position-relative">
 
         <div class="row mt-4">
             <div class="col-2">
@@ -101,44 +115,54 @@
                 <div class="main pt-4">
                     <div class="intro">
                         <h1>Input group</h1>
-                        <p class="lead">dễ dàng mở rộng mẫu văn bản bằng cách thêm văn bản, nút , ký tự / ....</p>
+                        <p class="lead">Dễ dàng mở rộng mẫu văn bản bằng cách thêm văn bản, nút , ký tự / ....</p>
                     </div>
                     <div class="content">
                         <h2 id="inputgroupexampletemplate" class="mt-2">Example template</h2>
                         <div class="bd-example">
                             <div class="mb-3">
-                                <b>BẢO LONG <span class="form-control-dotted  w-3"></span>.</b>
-                                <p class="my-3">Số:<span class="form-control-dotted  w-2"></span>/20<span class="form-control-dotted  w-2"></span>/TT-<span class="form-control-dotted  w-2"></span></p>
-                                <p class="my-3"><span class="form-control-dotted  w-5"></span>, ngày <span class="form-control-dotted  w-5"></span> tháng <span class="form-control-dotted  w-5"></span> năm<span class="form-control-dotted w-5"></span></p>
-                                <p><span class="my-3"> Ngày <span class="form-control-dotted  w-3"></span>/<span class="form-control-dotted  w-3"></span>/<span class="form-control-dotted  w-3"></span></span></p>
-                                <p class="my-3">
+                                <button type="button" class="btn-clipboard ml-0 " title="" data-bs-original-title="Copy to clipboard">Copy</button>
+                                <b class="input-group">BẢO LONG <span class="form-control form-dotted  w-4"></span>.</b>
+                                <button type="button" class="btn-clipboard ml-0 " title="" data-bs-original-title="Copy to clipboard">Copy</button>
+                                <p class="input-group my-3">Số:<span class="form-control form-dotted  w-2"></span>/20<span class="form-control form-dotted  w-2"></span>/TT-<span class="form-control form-dotted  w-2"></span></p>
+                                <button type="button" class="btn-clipboard ml-0" title="" data-bs-original-title="Copy to clipboard">Copy</button>
+                                <p class=" input-group my-3"><span class="form-control form-dotted  w-4"></span>, ngày <span class="form-control form-dotted  w-5"></span> tháng <span class="form-control form-dotted  w-5"></span> năm<span class="form-control form-dotted w-5"></span></p>
+                                <button type="button" class="btn-clipboard ml-0 " title="" data-bs-original-title="Copy to clipboard">Copy</button>
+                                <p class="input-group"><span class="my-3"> Ngày <span class="form-control form-dotted  w-4"></span>/<span class="form-control form-dotted  w-4"></span>/<span class="form-control form-dotted  w-4"></span></span></p>
+                                <button type="button" class="btn-clipboard ml-0" title="" data-bs-original-title="Copy to clipboard">Copy</button>
+                                <p class="input-group my-3">
                                     <span>-</span> <span class="pl-5"> <i> Như trên</i></span>
                                 </p>
-                                <p class="my-3">
+                                <button type="button" class="btn-clipboard ml-0" title="" data-bs-original-title="Copy to clipboard">Copy</button>
+                                <p class="input-group my-3">
                                     <span>-</span> <span class="pl-5">Phần đã tạm ứng: </span>
                                 </p>
-                                <p class="py-3">TỔNG PHÍ BẢO HIỂM PHẢI THANH TOÁN: <span class="form-control-dotted  w-3"></span> VNĐ</p>
-                                <p class="my-3">
-                                    <span>Từ <span class="form-control w-2"></span> :<span class="form-control w-2"></span> , ngày<span class="form-control w-2"></span> /<span class="form-control w-3"></span> /<span class="form-control w-2"></span>  đến <span class="form-control w-2"></span>: <span class="form-control w-2"></span>, ngày <span class="form-control w-2"></span>/<span class="form-control w-2"></span> /<span class="form-control w-2"></span> </span>
-                                    
+                                <button type="button" class="btn-clipboard ml-0 " title="" data-bs-original-title="Copy to clipboard">Copy</button>
+                                <p class=" input-group py-3">TỔNG PHÍ BẢO HIỂM PHẢI THANH TOÁN: <span class="form-control form-dotted  w-4"></span> VNĐ</p>
+                                <button type="button" class="btn-clipboard ml-0" title="" data-bs-original-title="Copy to clipboard">Copy</button>
+                                <p class="input-group my-3">
+                                    <span>Từ <span class="form-control w-2"></span> :<span class="form-control w-2"></span> , ngày<span class="form-control w-2"></span> /<span class="form-control w-4"></span> /<span class="form-control w-2"></span>  đến <span class="form-control w-2"></span>: <span class="form-control w-2"></span>, ngày <span class="form-control w-2"></span>/<span class="form-control w-2"></span> /<span class="form-control w-2"></span> </span>
                                 </p>
-                                <p class="my-3">Kỳ  01: Thanh toán <span class="form-control  w-10"></span> đồng chậm nhất vào ngày <span class="form-control w-2"></span>/<span class="form-control w-2"></span>/<span class="form-control w-2"></span></p>
+                                <button type="button" class="btn-clipboard ml-0 " title="" data-bs-original-title="Copy to clipboard">Copy</button>
+                                <p class="input-group my-3">Kỳ  01: Thanh toán <span class="form-control  w-10"></span> đồng chậm nhất vào ngày <span class="form-control w-2"></span>/<span class="form-control w-2"></span>/<span class="form-control w-2"></span></p>
                             </div>
-
                             
                         </div>
                         <h2 id="formcontroldescribe" class="mt-2">Basic example</h2>
-                        <p> kết hợp form-control và input-group-text để sắp xếp tùy chính nội dụng phù hợp với nhu cầu</p>
+                        <p> Kết hợp form-control và <code>text/ ký tự/ số...</code> để sắp xếp tùy chính nội dụng phù hợp với nhu cầu</p>
                         <h2 id="formcontrolexample" class="mt-2">Example</h2>
                         <div class="bd-example">
+                            <button type="button" class="btn-clipboard ml-0 " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                             <div class="input-group mb-3">
                                 @
                                 <span class="form-control w-25"></span>
                             </div>
+                            <button type="button" class="btn-clipboard ml-0 " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                             <div class="input-group mb-3">
                                 <span class="form-control w-50"></span>
                                 @
                             </div>
+                            <button type="button" class="btn-clipboard ml-0 " title="" data-bs-original-title="Copy to clipboard">Copy</button>
                             <div class="input-group mb-3">
                                 @
                                 <span class="form-control w-75"></span>
@@ -148,13 +172,13 @@
                         <div class="highlight">
                             <pre class="chroma">
                                 <code class="language-html" data-lang="html">
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"mb-3"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"input-group mb-3"</span><span class="p">&gt;</span>
         @<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-control w-25"</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"mb-3"</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-control w-50"</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>@
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"input-group mb-3"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"input-group form-control w-50"</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>@
     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"mb-3"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"input-group mb-3"</span><span class="p">&gt;</span>
         @<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-control w-75"</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>@
     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
                             </code>
