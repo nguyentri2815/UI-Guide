@@ -12,6 +12,39 @@
         
     }
 }
-// .border-dotted{
-//     border-style: dotted;
-// }
+.tab{
+    .position-absulute{
+        background: white;
+        padding-right: 5px;
+        position: absolute;
+        bottom: -3px;
+    }
+    .form-control{
+        padding: 0 0 0 20%;
+    }
+}
+.form-table{
+    & th{
+        border: none;
+    }
+    & td{
+        border: none;
+    }
+    & .w-2{
+        white-space: nowrap;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.table-form{
+    display: table;
+    .table-row{
+        display: table-row
+    }
+    .table-cell{
+        display: table-cell;
+        &.w-2{
+            white-space: nowrap;
+        }
+    }
+}

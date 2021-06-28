@@ -146,5 +146,14 @@ document.addEventListener("DOMContentLoaded",function(){
 
   }
 
+  //search
+  var listsearchs=[
+      //table
+      {
+          name:"table",
+          link:"tables.html"
+      },
+  ]
+
 },false)  
  

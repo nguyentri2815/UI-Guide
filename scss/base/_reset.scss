@@ -6,23 +6,17 @@
 // html,
 body {
     font-size: 1rem;
+    font-family: Arial;
+    font-size: 14px
 }
 
-// input,
-// textarea,
-// select,
-// button{
-//  outline: none;
-// }
-// input{
-// line-height: normal;
-// }
-// label,
-// button{
-// cursor: pointer;
-// }
+
 a {
 text-decoration: none;
+}
+p{
+    margin-bottom: 1rem;
+    line-height: 1.8;
 }
 ul{
     list-style: none;

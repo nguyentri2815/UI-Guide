@@ -150,6 +150,7 @@ $utilities: map-merge(
         18 :18%,
         20 :20%,
         25: 25%,
+        30:30%,
         50: 50%,
         75: 75%,
         100: 100%,
@@ -172,24 +173,20 @@ $utilities: map-merge(
         100: 100%,
       )
     ),
-    // "viewport-width": (
-    //   property: width,
-    //   class: vw,
-    //   values: (100: 100vw)
-    // ),
-    // "min-viewport-width": (
-    //   property: min-width,
-    //   class: min-vw,
-    //   values: (100: 100vw)
-    // ),
     "height": (
       property: height,
       class: h,
       values: (
-        25: 1rem,
-        50: 2rem,
-        75: 3rem,
-        100: 4rem,
+        1: 1rem,
+        2: 2rem,
+        3: 3rem,
+        4: 4rem,
+        5: 5rem,
+        6: 6rem,
+        7: 7rem,
+        8: 8rem,
+        9: 9rem,
+        10: 10rem,
         auto: auto
       )
     ),
@@ -209,124 +206,6 @@ $utilities: map-merge(
         100: 100%,
       )
     ),
-    // "viewport-height": (
-    //   property: height,
-    //   class: vh,
-    //   values: (100: 100vh)
-    // ),
-    // "min-viewport-height": (
-    //   property: min-height,
-    //   class: min-vh,
-    //   values: (100: 100vh)
-    // ),
-    // scss-docs-end utils-sizing
-    // Flex utilities
-    // scss-docs-start utils-flex
-    // "flex": (
-    //   responsive: true,
-    //   property: flex,
-    //   values: (fill: 1 1 auto)
-    // ),
-    // "flex-direction": (
-    //   responsive: true,
-    //   property: flex-direction,
-    //   class: flex,
-    //   values: row column row-reverse column-reverse
-    // ),
-    // "flex-grow": (
-    //   responsive: true,
-    //   property: flex-grow,
-    //   class: flex,
-    //   values: (
-    //     grow-0: 0,
-    //     grow-1: 1,
-    //   )
-    // ),
-    // "flex-shrink": (
-    //   responsive: true,
-    //   property: flex-shrink,
-    //   class: flex,
-    //   values: (
-    //     shrink-0: 0,
-    //     shrink-1: 1,
-    //   )
-    // ),
-    // "flex-wrap": (
-    //   responsive: true,
-    //   property: flex-wrap,
-    //   class: flex,
-    //   values: wrap nowrap wrap-reverse
-    // ),
-    // "gap": (
-    //   responsive: true,
-    //   property: gap,
-    //   class: gap,
-    //   values: $spacers
-    // ),
-    // "justify-content": (
-    //   responsive: true,
-    //   property: justify-content,
-    //   values: (
-    //     start: flex-start,
-    //     end: flex-end,
-    //     center: center,
-    //     between: space-between,
-    //     around: space-around,
-    //     evenly: space-evenly,
-    //   )
-    // ),
-    // "align-items": (
-    //   responsive: true,
-    //   property: align-items,
-    //   values: (
-    //     start: flex-start,
-    //     end: flex-end,
-    //     center: center,
-    //     baseline: baseline,
-    //     stretch: stretch,
-    //   )
-    // ),
-    // "align-content": (
-    //   responsive: true,
-    //   property: align-content,
-    //   values: (
-    //     start: flex-start,
-    //     end: flex-end,
-    //     center: center,
-    //     between: space-between,
-    //     around: space-around,
-    //     stretch: stretch,
-    //   )
-    // ),
-    // "align-self": (
-    //   responsive: true,
-    //   property: align-self,
-    //   values: (
-    //     auto: auto,
-    //     start: flex-start,
-    //     end: flex-end,
-    //     center: center,
-    //     baseline: baseline,
-    //     stretch: stretch,
-    //   )
-    // ),
-    // "order": (
-    //   responsive: true,
-    //   property: order,
-    //   values: (
-    //     first: -1,
-    //     0: 0,
-    //     1: 1,
-    //     2: 2,
-    //     3: 3,
-    //     4: 4,
-    //     5: 5,
-    //     last: 6,
-    //   ),
-    // ),
-    // scss-docs-end utils-flex
-    // Margin utilities
-    // scss-docs-start utils-spacing
     "margin": (
       responsive: true,
       property: margin,
@@ -369,50 +248,6 @@ $utilities: map-merge(
       class: ml,
       values: map-merge($spacers, (auto: auto))
     ),
-    // Negative margin utilities
-    // "negative-margin": (
-    //   responsive: true,
-    //   property: margin,
-    //   class: m,
-    //   values: $negative-spacers
-    // ),
-    // "negative-margin-x": (
-    //   responsive: true,
-    //   property: margin-right margin-left,
-    //   class: mx,
-    //   values: $negative-spacers
-    // ),
-    // "negative-margin-y": (
-    //   responsive: true,
-    //   property: margin-top margin-bottom,
-    //   class: my,
-    //   values: $negative-spacers
-    // ),
-    // "negative-margin-top": (
-    //   responsive: true,
-    //   property: margin-top,
-    //   class: mt,
-    //   values: $negative-spacers
-    // ),
-    // "negative-margin-end": (
-    //   responsive: true,
-    //   property: margin-right,
-    //   class: me,
-    //   values: $negative-spacers
-    // ),
-    // "negative-margin-bottom": (
-    //   responsive: true,
-    //   property: margin-bottom,
-    //   class: mb,
-    //   values: $negative-spacers
-    // ),
-    // "negative-margin-start": (
-    //   responsive: true,
-    //   property: margin-left,
-    //   class: ms,
-    //   values: $negative-spacers
-    // ),
-    // Padding utilities
     "padding": (
       responsive: true,
       property: padding,
@@ -455,14 +290,6 @@ $utilities: map-merge(
       class: pl,
       values: $spacers
     ),
-    // scss-docs-end utils-spacing
-    // Text
-    // scss-docs-start utils-text
-    // "font-family": (
-    //   property: font-family,
-    //   class: font,
-    //   values: (monospace: var(--#{$variable-prefix}font-monospace))
-    // ),
     "font-size": (
       rfs: true,
       property: font-size,
@@ -524,15 +351,6 @@ $utilities: map-merge(
         nowrap: nowrap,
       )
     ),
-    // "word-wrap": (
-    //   property: word-wrap word-break,
-    //   class: text,
-    //   values: (break: break-word),
-    //   rtl: false
-    // ),
-    // scss-docs-end utils-text
-
-    // scss-docs-start utils-color
     "color": (
       property: color,
       class: text,
@@ -562,24 +380,6 @@ $utilities: map-merge(
         )
       )
     ),
-    // scss-docs-end utils-bg-color
-    // "gradient": (
-    //   property: background-image,
-    //   class: bg,
-    //   values: (gradient: var(--#{$variable-prefix}gradient))
-    // ),
-    // scss-docs-start utils-interaction
-    // "user-select": (
-    //   property: user-select,
-    //   values: all auto none
-    // ),
-    // "pointer-events": (
-    //   property: pointer-events,
-    //   class: pe,
-    //   values: none auto,
-    // ),
-    // scss-docs-end utils-interaction
-    // scss-docs-start utils-border-radius
     "rounded": (
       property: border-radius,
       class: rounded,
@@ -613,17 +413,6 @@ $utilities: map-merge(
       class: rounded-start,
       values: (null: $border-radius)
     ),
-    // scss-docs-end utils-border-radius
-    // scss-docs-start utils-visibility
-    // "visibility": (
-    //   property: visibility,
-    //   class: null,
-    //   values: (
-    //     visible: visible,
-    //     invisible: hidden,
-    //   )
-    // )
-    // scss-docs-end utils-visibility
   ),
   $utilities
 );
