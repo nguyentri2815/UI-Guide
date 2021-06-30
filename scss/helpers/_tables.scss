@@ -12,13 +12,15 @@ table {
     //     border-top: 1px solid #dee2e6;
     // }
     th{
-        padding: .3rem;
-        vertical-align: middle;
+        padding: 0 .3rem;
+        height: 2rem;
+        vertical-align:middle;
         border: 0.5px solid #000;
     }
     td{
-        padding: .3rem;
-        vertical-align: middle;
+        padding: 0 .3rem;
+        height: 2rem;
+        vertical-align:middle;
         border: 0.5px solid #000;
     }
     &.table-bordered {
@@ -46,34 +48,38 @@ table {
     // }
     &.table-xs{
         th{
-            padding: .15rem;
+            height: 1.8rem;
         }
         td{
-            padding: .15rem;
+            height: 1.8rem;
         }
     }
     &.table-sm{
         th{
-            padding: .2rem;
+            height: 2.2rem;
+
         }
         td{
-            padding: .2rem;
+            height: 2.2rem;
+
         }
     }
     &.table-md{
         th{
-            padding: .4rem;
+            height: 2.4rem;
+
         }
         td{
-            padding: .4rem;
+            height: 2.4rem;
         }
     }
     &.table-lg{
         th{
-            padding: .6rem;
+            height: 2.6rem;
+
         }
         td{
-            padding: .6rem;
+            height: 2.6rem;
         }
     }
     // caption {

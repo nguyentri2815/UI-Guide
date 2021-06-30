@@ -65,13 +65,15 @@ table {
 }
 
 .table th {
-  padding: .3rem;
+  padding: 0 .3rem;
+  height: 2rem;
   vertical-align: middle;
   border: 0.5px solid #000;
 }
 
 .table td {
-  padding: .3rem;
+  padding: 0 .3rem;
+  height: 2rem;
   vertical-align: middle;
   border: 0.5px solid #000;
 }
@@ -97,35 +99,35 @@ table {
 }
 
 .table.table-xs th {
-  padding: .15rem;
+  height: 1.8rem;
 }
 
 .table.table-xs td {
-  padding: .15rem;
+  height: 1.8rem;
 }
 
 .table.table-sm th {
-  padding: .2rem;
+  height: 2.2rem;
 }
 
 .table.table-sm td {
-  padding: .2rem;
+  height: 2.2rem;
 }
 
 .table.table-md th {
-  padding: .4rem;
+  height: 2.4rem;
 }
 
 .table.table-md td {
-  padding: .4rem;
+  height: 2.4rem;
 }
 
 .table.table-lg th {
-  padding: .6rem;
+  height: 2.6rem;
 }
 
 .table.table-lg td {
-  padding: .6rem;
+  height: 2.6rem;
 }
 
 .table-borderless tbody + tbody, .table-borderless td, .table-borderless th, .table-borderless thead th {

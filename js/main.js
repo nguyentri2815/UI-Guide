@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded",function(){
             </button>
             <div class="collapse">
                 <ul class="list-unstyled fw-normal pb-1 small">
+                    <li><a href="headerbaolong.html">Header baolong</a></li>
                     <li><a href="tables.html">Table</a></li>
                     <li><a href="typography.html">Typography</a></li>
                     <li><a href="icon.html">icon</a></li>
