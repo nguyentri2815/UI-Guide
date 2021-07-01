@@ -64,6 +64,10 @@ table {
   color: #000;
 }
 
+.table p {
+  margin-bottom: 0;
+}
+
 .table th {
   padding: 0 .3rem;
   height: 2rem;
@@ -128,6 +132,10 @@ table {
 
 .table.table-lg td {
   height: 2.6rem;
+}
+
+.table.align-bottom td {
+  vertical-align: bottom;
 }
 
 .table-borderless tbody + tbody, .table-borderless td, .table-borderless th, .table-borderless thead th {
