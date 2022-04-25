@@ -1,0 +1,112 @@
+.text-dark{
+    table {
+        th,td{
+            color:$black;
+        }
+    }
+}
+table {
+    border-collapse: collapse;
+    width:100%;
+    font-size: 1rem;
+    &.align-top{
+        th,td{
+            vertical-align:top;
+        }
+    }
+}
+.table.table-primary-darkest{
+    td{
+        border-color: $primary-darkest;
+    }
+}
+.table {
+    width: 100%;
+    color: $primary-darkest;
+    ul{
+        padding-left:7px;
+    }
+    & p {
+        margin-bottom: 0;
+    }
+    th {
+        padding: 0.4rem;
+        vertical-align: middle;
+        border-width: 0.8px;
+        border-color: $black;
+        border-style: solid;
+        height: 1.6rem;
+    }
+    td {
+        padding: 0.5rem 0.5rem;
+        vertical-align: middle;
+        border-width: 0.8px;
+        border-color: $black;
+        border-style: solid;
+        height: 1.6rem;
+    }
+    &.table-dotted {
+        th {
+            border-style: dotted;
+        }
+        td {
+            border-style: dotted;
+        }
+    }
+    &.table-dashed {
+        th {
+            border-style: dashed;
+        }
+        td {
+            border-style: dashed;
+        }
+    }
+    &.table-xs {
+        th {
+            padding: 0.2rem 0.5rem;
+        }
+        td {
+            padding: 0.2rem 0.5rem;
+        }
+    }
+    &.table-sm {
+        th {
+            padding: 0.4rem 0.5rem;
+        }
+        td {
+            padding: 0.4rem 0.5rem;
+        }
+    }
+    &.table-md {
+        th {
+            padding: 0.8rem 0.5rem;
+        }
+        td {
+            padding: 0.8rem 0.5rem;
+        }
+    }
+    &.table-lg {
+        th {
+            padding: 1rem 0.5rem;
+        }
+        td {
+            padding: 1rem 0.5rem;
+        }
+    }
+}
+.table-borderless tbody + tbody,
+.table-borderless td,
+.table-borderless th,
+.table-borderless thead th {
+    border: 0;
+}
+.table .table-dark th {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+}
+.table .table-light th {
+    color: #495057;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}

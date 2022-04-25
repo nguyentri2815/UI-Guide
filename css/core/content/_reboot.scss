@@ -1,0 +1,46 @@
+// Common reboot
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// html,
+body {
+  font-size: 1rem;
+  font-family: 'Calibri';
+  color: #000;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  box-shadow: none !important;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+ul {
+  list-style: none;
+  &.list-style-disc {
+    list-style: disc;
+  }
+  &.list-style-none{
+    list-style:none;
+    padding-left:0!important;
+  }
+}
+.text-lh-1{
+  p{
+    margin-bottom:4px;
+    line-height:1.2;
+  }
+}
