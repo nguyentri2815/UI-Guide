@@ -1,0 +1,29 @@
+.form-control {
+    border-bottom: 0.8px solid #000;
+    display: inline-block;
+    // vertical-align: middle;
+    &.form-dotted{
+        border-bottom: 0.8px dotted #000;
+    }
+    &.border-dotted{
+        border: none;
+        border-bottom: 0.8px dotted #000;
+        
+    }
+    &.border-dashed{
+        border: none;
+        border-bottom: 0.8px dashed #000;
+    }
+}
+hr{
+    &.orange-line{
+        background-color: $orange;
+        height: 5px;
+        border:0px solid white;
+    }
+    &.primary-darkest-line{
+        background-color: $primary-darkest;
+        height: 1px;
+        border:0px solid white;
+    }
+}

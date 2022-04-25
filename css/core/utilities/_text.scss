@@ -1,0 +1,163 @@
+//font size
+.fs-1 {
+  font-size: 2.5rem !important;
+}
+
+.fs-2 {
+  font-size: 2rem !important;
+}
+
+.fs-3 {
+  font-size: 1.75rem !important;
+}
+
+.fs-4 {
+  font-size: 1.5rem !important;
+  table{
+    font-size: 1.5rem !important;
+  }
+}
+
+.fs-5 {
+  font-size: 1.25rem !important;
+  table{
+    font-size: 1.25rem !important;
+  }
+}
+
+.fs-6 {
+  font-size: 1.2rem !important;
+  table{
+    font-size: 1.2rem !important;
+  }
+}
+.fs-7 {
+  font-size: 1rem !important;
+  table{
+    font-size: 1rem !important;
+  }
+}
+.fs-8 {
+  font-size: 0.8rem !important;
+  table{
+    font-size: 0.8rem !important;
+  }
+}
+
+//font style
+
+.fst-italic {
+  font-style: italic !important;
+  th,td{
+  font-style: italic !important;
+  }
+}
+
+.fst-normal {
+  font-style: normal !important;
+}
+
+//font-weight
+.fw-light {
+  font-weight: 300 !important;
+}
+
+.fw-lighter {
+  font-weight: lighter !important;
+}
+
+.fw-normal {
+  font-weight: 400 !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+.fw-bolder {
+  font-weight: bolder !important;
+}
+
+//line height
+.lh-1 {
+  line-height: 1 !important;
+    p{
+      line-height:1;
+    }
+}
+
+.lh-sm {
+  line-height: 1.25 !important;
+  p{
+    line-height:1.25;
+  }
+}
+
+.lh-base {
+  line-height: 1.5 !important;
+  p{
+    line-height:1.5;
+  }
+}
+
+.lh-lg {
+  line-height: 2 !important;
+}
+
+//text align
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+//text decoration
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.text-decoration-underline {
+  text-decoration: underline !important;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through !important;
+}
+
+//text transform
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+//text wrap
+.text-wrap {
+  white-space: normal !important;
+}
+
+.text-nowrap {
+  white-space: nowrap !important;
+}
+
+.text-break{
+  td{
+    word-break: break-all;
+  }
+}
